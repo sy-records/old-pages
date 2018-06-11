@@ -43,7 +43,7 @@
     
     <title>
         
-            CentOS与Ubuntu有什么不同？ | 
+            Nginx防止DDOS攻击配置 | 
         
         ShenYan&#39;s Notes
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="Linux 中的可选项似乎“无穷无尽”，因为每个人都可以通过修改一个已经发行的版本或者新的白手起家的版本 (LFS) 来构建 Linux。">
-    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,CentOS,Ubuntu">
+    <meta name="description" itemprop="description" content="防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是Nginx，主要使用nginx的http_limit_conn和http_limit_req模块来防御。 ngx_http_limit_conn_module 可以限制单个IP的连接数，ngx_http_limit_req_module可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。">
+    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,DDOS,Nginx">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ShenYan&#39;s Notes">
-    <meta name="msapplication-starturl" content="https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html">
+    <meta name="msapplication-starturl" content="https://iphper.cn/Nginx防止DDOS攻击配置.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ShenYan&#39;s Notes">
@@ -223,7 +223,7 @@
     <link rel="apple-touch-icon" href="/img/favicon.png">
 
     <!-- Site Verification -->
-    
+    <meta name="google-site-verification" content="ClZyNYMh8qmSW2AKPSCAWDEPNo6FEv0m0okiHcsHgKw" />
     
 
     <!-- RSS -->
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html">
+    <meta property="og:url" content="https://iphper.cn/Nginx防止DDOS攻击配置.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="CentOS与Ubuntu有什么不同？ | ShenYan&#39;s Notes">
+    <meta property="og:title" content="Nginx防止DDOS攻击配置 | ShenYan&#39;s Notes">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="Linux 中的可选项似乎“无穷无尽”，因为每个人都可以通过修改一个已经发行的版本或者新的白手起家的版本 (LFS) 来构建 Linux。">
-    <meta property="og:article:tag" content="CentOS"> <meta property="og:article:tag" content="Ubuntu"> 
+    <meta property="og:description" content="防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是Nginx，主要使用nginx的http_limit_conn和http_limit_req模块来防御。 ngx_http_limit_conn_module 可以限制单个IP的连接数，ngx_http_limit_req_module可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。">
+    <meta property="og:article:tag" content="DDOS"> <meta property="og:article:tag" content="Nginx"> 
 
     
-        <meta property="article:published_time" content="Sun Dec 10 2017 12:45:31 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jun 11 2018 19:51:18 GMT+0800">
+        <meta property="article:published_time" content="Sat Dec 02 2017 10:46:37 GMT+0800">
+        <meta property="article:modified_time" content="Sat Dec 09 2017 08:41:43 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html" />
+        <link rel="canonical" href="https://iphper.cn/Nginx防止DDOS攻击配置.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html",
-    "headline": "CentOS与Ubuntu有什么不同？",
-    "datePublished": "Sun Dec 10 2017 12:45:31 GMT+0800",
-    "dateModified": "Mon Jun 11 2018 19:51:18 GMT+0800",
+    "mainEntityOfPage": "https://iphper.cn/Nginx防止DDOS攻击配置.html",
+    "headline": "Nginx防止DDOS攻击配置",
+    "datePublished": "Sat Dec 02 2017 10:46:37 GMT+0800",
+    "dateModified": "Sat Dec 09 2017 08:41:43 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Shen Yan",
@@ -284,8 +284,8 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",CentOS,UbuntuPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
-    "description": "Linux 中的可选项似乎“无穷无尽”，因为每个人都可以通过修改一个已经发行的版本或者新的白手起家的版本 (LFS) 来构建 Linux。",
+    "keywords": ",DDOS,NginxPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
+    "description": "防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是Nginx，主要使用nginx的http_limit_conn和http_limit_req模块来防御。 ngx_http_limit_conn_module 可以限制单个IP的连接数，ngx_http_limit_req_module可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。",
 }
 </script>
 
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#什么是-CentOS？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是 CentOS？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CentOS-的历史和第一次释出"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">CentOS 的历史和第一次释出</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CentOS-设计"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">CentOS 设计</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Ubuntu"><span class="post-toc-number">2.</span> <span class="post-toc-text">Ubuntu</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Ubuntu-的设计"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Ubuntu 的设计</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CentOS-与-Ubuntu-的区别"><span class="post-toc-number">3.</span> <span class="post-toc-text">CentOS 与 Ubuntu 的区别</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#结论"><span class="post-toc-number">4.</span> <span class="post-toc-text">结论</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-限制每秒请求数"><span class="post-toc-number">1.</span> <span class="post-toc-text">一. 限制每秒请求数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#参数说明："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">参数说明：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-限制IP连接数"><span class="post-toc-number">2.</span> <span class="post-toc-text">二.限制IP连接数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-白名单设置"><span class="post-toc-number">3.</span> <span class="post-toc-text">三.白名单设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-测试"><span class="post-toc-number">4.</span> <span class="post-toc-text">四.测试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#被限制连接数："><span class="post-toc-number">4.1.</span> <span class="post-toc-text">被限制连接数：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#被限制请求数："><span class="post-toc-number">4.2.</span> <span class="post-toc-text">被限制请求数：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五-其它一些防CC的方法"><span class="post-toc-number">5.</span> <span class="post-toc-text">五.其它一些防CC的方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">1.Nginx模块 ModSecurity、http_guard、ngx_lua_waf</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-软件-Iptables"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">2.软件+Iptables</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -382,7 +382,7 @@
         
     
             <p class="article-headline-p">
-                CentOS与Ubuntu有什么不同？
+                Nginx防止DDOS攻击配置
             </p>
         </div>
 
@@ -401,7 +401,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Shen Yan</strong>
-        <span>12月 10, 2017</span>
+        <span>12月 02, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -425,7 +425,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/CentOS/">CentOS</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Ubuntu/">Ubuntu</a>
+        <a class="post_tag-link" href="/tags/DDOS/">DDOS</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Nginx/">Nginx</a>
     </ul>
     
 
@@ -442,7 +442,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CentOS与Ubuntu有什么不同？&url=https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Nginx防止DDOS攻击配置&url=https://iphper.cn/Nginx防止DDOS攻击配置.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -451,7 +451,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CentOS与Ubuntu有什么不同？&url=https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html&via=Shen Yan" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Nginx防止DDOS攻击配置&url=https://iphper.cn/Nginx防止DDOS攻击配置.html&via=Shen Yan" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -460,7 +460,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/Nginx防止DDOS攻击配置.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -469,7 +469,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/Nginx防止DDOS攻击配置.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -481,7 +481,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=CentOS与Ubuntu有什么不同？&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=Nginx防止DDOS攻击配置&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/Nginx防止DDOS攻击配置.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -500,30 +500,64 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Linux 中的可选项似乎“无穷无尽”，因为每个人都可以通过修改一个已经发行的版本或者新的白手起家的版本 (LFS) 来构建 Linux。</p>
-<a id="more"></a>
-<p>关于 Linux 发行版的选择，我们关注的因素包括用户界面、文件系统、软件包分发、新的特性以及更新周期和可维护性等。</p>
-<p>在这篇文章中，我们会讲到两个较为熟知的 Linux 发行版，实际上，更多的是介绍两者之间的不同，以及在哪些方面一方比另一方更好。</p>
-<h3 id="什么是-CentOS？"><a href="#什么是-CentOS？" class="headerlink" title="什么是 CentOS？"></a>什么是 CentOS？</h3><p>CentOS（Community Enterprise Operating System）是脱胎于 Red Hat Enterprise Linux (RHEL) 并与之兼容的由社区支持的克隆版 Linux 发行版，所以我们可以认为 CentOS 是 RHEL 的一个免费版。CentOS 的每一套发行版都有 10 年的维护期，每个新版本的释出周期为 2 年。在 2014 年 1 月 8 日，CentOS 声明正式加入红帽，为新的 CentOS 董事会所管理，但仍然保持与 RHEL 的独立性。</p>
-<h4 id="CentOS-的历史和第一次释出"><a href="#CentOS-的历史和第一次释出" class="headerlink" title="CentOS 的历史和第一次释出"></a>CentOS 的历史和第一次释出</h4><p>CentOS 第一次释出是在 2004 年，当时名叫 cAOs Linux；它是由社区维护和管理的一套基于 RPM 的发行版。</p>
-<p>CentOS 结合了包括 Debian、Red Hat Linux/Fedora 和 FreeBSD 等在内的许多方面，使其能够令服务器和集群稳定工作 3 到 5 年的时间。它有一群开源软件开发者作为拥趸，是一个大型组织（CAOS 基金会）的一部分。</p>
-<p>在 2006 年 6 月，David Parsley 宣布由他开发的 TAO Linux（另一个 RHEL 克隆版本）退出历史舞台并全力转入 CentOS 的开发工作。不过，他的领域转移并不会影响之前的 TAO 用户， 因为他们可以通过使用 yum update 来更新系统以迁移到 CentOS。</p>
-<p>2014 年 1 月，红帽开始赞助 CentOS 项目，并移交了所有权和商标。</p>
-<h4 id="CentOS-设计"><a href="#CentOS-设计" class="headerlink" title="CentOS 设计"></a>CentOS 设计</h4><p>确切地说，CentOS 是付费 RHEL (Red Had Enterprise Edition) 版本的克隆。RHEL 提供源码以供之后 CentOS 修改和变更（移除商标和 logo）并完善为最终的成品。</p>
-<h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><p>Ubuntu 是一个基于 Debian 的 Linux 操作系统，应用于桌面、服务器、智能手机和平板电脑等多个领域。Ubuntu 是由一个英国的名为 Canonical Ltd. 的公司发行的，由南非的 Mark Shuttleworth 创立并赞助。</p>
-<p>扩展阅读：安装完 Ubuntu 16.10 必须做的 10 件事</p>
-<h4 id="Ubuntu-的设计"><a href="#Ubuntu-的设计" class="headerlink" title="Ubuntu 的设计"></a>Ubuntu 的设计</h4><p>Ubuntu 是一个在全世界的开发者共同努力下生成的开源发行版。在这些年的悉心经营下，Ubuntu 的界面变得越来越现代化和人性化，整个系统运行也更加流畅、安全，并且有成千上万的应用可供下载。</p>
-<p>由于它是基于 Debian 的，因此它也支持 .deb 包、较新的包系统和更为安全的 snap 包格式 (snappy)。</p>
-<p>这种新的打包系统允许分发的应用自带满足所需的依赖性。</p>
-<h3 id="CentOS-与-Ubuntu-的区别"><a href="#CentOS-与-Ubuntu-的区别" class="headerlink" title="CentOS 与 Ubuntu 的区别"></a>CentOS 与 Ubuntu 的区别</h3><ul>
-<li>Ubuntu 基于 Debian，CentOS 基于 RHEL；</li>
-<li>Ubuntu 使用 .deb 和 .snap 的软件包，CentOS 使用 .rpm 和 flatpak 软件包；</li>
-<li>Ubuntu 使用 apt 来更新，CentOS 使用 yum；</li>
-<li>CentOS 看起来会更稳定，因为它不会像 Ubuntu 那样对包做常规性更新，但这并不意味着 Ubuntu 就不比 CentOS 安全；</li>
-<li>Ubuntu 有更多的文档和免费的问题、信息支持；</li>
-<li>Ubuntu 服务器版本在云服务和容器部署上的支持更多。</li>
+        <p>防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是<code>Nginx</code>，主要使用<code>nginx</code>的<code>http_limit_conn</code>和<code>http_limit_req</code>模块来防御。 <code>ngx_http_limit_conn_module</code> 可以限制单个IP的连接数，<code>ngx_http_limit_req_module</code>可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。<br><a id="more"></a><br>下面是配置方法：</p>
+<h2 id="一-限制每秒请求数"><a href="#一-限制每秒请求数" class="headerlink" title="一. 限制每秒请求数"></a>一. 限制每秒请求数</h2><p><code>ngx_http_limit_req_module</code>模块通过漏桶原理来限制单位时间内的请求数，一旦单位时间内请求数超过限制，就会返回503错误。配置需要在两个地方设置：</p>
+<p><code>nginx.conf</code>的http段内定义触发条件，可以有多个条件<br>在<code>location</code>内定义达到触发条件时<code>nginx</code>所要执行的动作<br>例如：</p>
+<pre><code>http {
+     limit_req_zone $binary_remote_addr zone=one:10m rate=10r/s; 
+//触发条件，所有访问ip 限制每秒10个请求     ...     
+server { 
+        ...         
+location  ~ \.php$ {
+             limit_req zone=one burst=5 nodelay;   //执行的动作,通过zone名字对应               
+ }           
+ }     
+ } 
+</code></pre><h3 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h3><p><code>$binary_remote_addr</code> 二进制远程地址<br><code>zone=one:10m</code> 定义zone名字叫one，并为这个zone分配10M内存，用来存储会话（二进制远程地址），1m内存可以保存16000会话<br><code>rate=10r/s;</code> 限制频率为每秒10个请求<br><code>burst=5</code> 允许超过频率限制的请求数不多于5个，假设1、2、3、4秒请求为每秒9个，那么第5秒内请求15个是允许的，反之，如果第一秒内请求15个，会将5个请求放到第二秒，第二秒内超过10的请求直接503，类似多秒内平均速率限制。<br><code>nodelay</code> 超过的请求不被延迟处理，设置后15个请求在1秒内处理。</p>
+<h2 id="二-限制IP连接数"><a href="#二-限制IP连接数" class="headerlink" title="二.限制IP连接数"></a>二.限制IP连接数</h2><p><code>ngx_http_limit_conn_module</code>的配置方法和参数与<code>http_limit_req</code>模块很像，参数少，要简单很多</p>
+<pre><code>http {
+     limit_conn_zone $binary_remote_addr zone=addr:10m; //触发条件     ...     
+server { 
+        ...         
+location /download/ {  
+           limit_conn addr 1;    // 限制同一时间内1个连接，超出的连接返回503  
+               }  
+          }   
+   }   
+</code></pre><h2 id="三-白名单设置"><a href="#三-白名单设置" class="headerlink" title="三.白名单设置"></a>三.白名单设置</h2><p><code>http_limit_conn</code> 和<code>http_limit_req</code>模块限制了单ip单位时间内的并发和请求数，但是如果<code>Nginx</code>前面有lvs或者haproxy之类的负载均衡或者反向代 理，<code>nginx</code>获取的都是来自负载均衡的连接或请求，这时不应该限制负载均衡的连接和请求，就需要geo和map模块设置白名单：</p>
+<pre><code>geo $whiteiplist {
+
+ default 1; 10.11.15.161 0; 
+
+} map $whiteiplist $limit {
+
+ 1 $binary_remote_addr; 0 &quot;&quot;; 
+
+} 
+limit_req_zone $limit zone=one:10m rate=10r/s;
+
+limit_conn_zone $limit zone=addr:10m;
+</code></pre><p>geo模块定义了一个默认值是1的变量<code>whiteiplist</code>，当在ip在白名单中，变量<code>whiteiplist</code>的值为0，反之为1<br>如果在白名单中–&gt; whiteiplist=0 –&gt; $limit=”” –&gt; 不会存储到10m的会话状态（one或者addr）中 –&gt; 不受限制<br>反之，不在白名单中 –&gt; whiteiplist=1 –&gt; $limit=二进制远程地址 –&gt;存储进10m的会话状态中 –&gt; 受到限制</p>
+<h2 id="四-测试"><a href="#四-测试" class="headerlink" title="四.测试"></a>四.测试</h2><p>使用ab命令来模拟CC攻击，<code>http_limit_conn</code>和<code>http_limit_req</code>模块要分开测试，同时注意<code>http_limit_conn</code>模块只统计正在被处理的请求（这些请求的头信息已被完全读入）所 在的连接。如果请求已经处理完，连接没有被关闭时，是不会被统计的。这时用<code>netstat</code>看到连接数可以超过限定的数量，不会被阻止。<br><code>ab -n 请求数 -c 并发 http://10.11.15.174/i.php</code></p>
+<p>如果被阻止前台会返回503，同时在nginx的error_log中会看到如下错误日志：</p>
+<h3 id="被限制连接数："><a href="#被限制连接数：" class="headerlink" title="被限制连接数："></a>被限制连接数：</h3><p><code>2015/01/28 14:20:26 [error] 4107#0: *65525 limiting connections by zone &quot;addr&quot;, client: 10.11.15.161, server: , request: &quot;GET /i.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42 HTTP/1.1&quot;, host: &quot;10.11.15.174&quot;, referrer: &quot;http://10.11.15.174/i.php&quot;</code></p>
+<h3 id="被限制请求数："><a href="#被限制请求数：" class="headerlink" title="被限制请求数："></a>被限制请求数：</h3><p><code>2015/01/28 14:18:59 [error] 4095#0: *65240 limiting requests, excess: 5.772 by zone &quot;one&quot;, client: 10.11.15.161, server: , request: &quot;GET /i.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42 HTTP/1.1&quot;, host: &quot;10.11.15.174&quot;, referrer: &quot;http://10.11.15.174/i.php&quot;</code></p>
+<h2 id="五-其它一些防CC的方法"><a href="#五-其它一些防CC的方法" class="headerlink" title="五.其它一些防CC的方法"></a>五.其它一些防CC的方法</h2><h3 id="1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf"><a href="#1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf" class="headerlink" title="1.Nginx模块 ModSecurity、http_guard、ngx_lua_waf"></a>1.<code>Nginx</code>模块 <code>ModSecurity</code>、<code>http_guard</code>、<code>ngx_lua_waf</code></h3><ul>
+<li><code>ModSecurity</code> 应用层WAF，功能强大，能防御的攻击多，配置复杂</li>
+<li><code>ngx_lua_waf</code> 基于<code>ngx_lua</code>的<code>web</code>应用防火墙，使用简单，高性能和轻量级</li>
+<li><p><code>http_guard</code> 基于<code>openresty</code></p>
+<h3 id="2-软件-Iptables"><a href="#2-软件-Iptables" class="headerlink" title="2.软件+Iptables"></a>2.软件+Iptables</h3></li>
+<li><p><code>fail2ban</code> 通过分析日志来判断是否使用iptables拦截</p>
+</li>
+<li><code>DDoS Deflate</code> 通过<code>netstat</code>判断ip连接数，并使用<code>iptables</code>屏蔽</li>
 </ul>
-<h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>不论你的选择如何，是 Ubuntu 还是 CentOS，两者都是非常优秀稳定的发行版。如果你想要一个发布周期更短的版本，那么就选 Ubuntu；如果你想要一个不经常变更包的版本，那么就选 CentOS。</p>
+<p>开头说过抗DDOS是一个系统工程，通过优化系统和软件配置，只能防御小规模的CC攻击，对于大规模攻击、四层流量攻击、混合攻击来说，基本上系统和应用软件没挂，带宽就打满了。下面是我使用过的防御DDOS的方式：</p>
+<ul>
+<li>高防服务器和带流量清洗的ISP<br>通常是美韩的服务器，部分ISP骨干供应商有流量清洗服务，例如香港的PCCW。通常可以防御10G左右的小型攻击</li>
+<li>流量清洗服务 例如：akamai(prolexic),nexusguard </li>
+<li>CDN 例如：蓝讯 网宿 cloudflare<br>等，CDN针对DDOS的分布式特点，将流量引流分散，同时对网站又有加速作用，效果好，成本相对低。</li>
+</ul>
+<p>总结一下：发动攻击易，防御难。七层好防，四层难防；小型能防，大型烧钱</p>
 
         
     
@@ -570,7 +604,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/12/12/CentOS文件操作与压缩命令大全.html" id="post_nav-newer" class="prev-content">
+        <a href="/Linux控制台下-screen-命令使用学习笔记.html" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -584,7 +618,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2017/12/06/Linux下载指令wget命令详解.html" id="post_nav-older" class="next-content">
+        <a href="/让VIM支持Nginx-conf文件语法高亮显示.html" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">

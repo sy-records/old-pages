@@ -43,7 +43,7 @@
     
     <title>
         
-            Nginx防止DDOS攻击配置 | 
+            Linux控制台下 screen 命令使用学习笔记 | 
         
         ShenYan&#39;s Notes
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是Nginx，主要使用nginx的http_limit_conn和http_limit_req模块来防御。 ngx_http_limit_conn_module 可以限制单个IP的连接数，ngx_http_limit_req_module可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。">
-    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,DDOS,Nginx">
+    <meta name="description" itemprop="description" content="creen 是一个非常有用的命令，提供从单个 SSH 会话中使用多个 shell 窗口（会话）的能力。当会话被分离或网络中断时，screen 会话中启动的进程仍将运行，你可以随时重新连接到 screen 会话。如果你想运行一个持久的进程或者从多个位置连接到 shell 会话，这也很方便。">
+    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,screen">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ShenYan&#39;s Notes">
-    <meta name="msapplication-starturl" content="https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html">
+    <meta name="msapplication-starturl" content="https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ShenYan&#39;s Notes">
@@ -223,7 +223,7 @@
     <link rel="apple-touch-icon" href="/img/favicon.png">
 
     <!-- Site Verification -->
-    
+    <meta name="google-site-verification" content="ClZyNYMh8qmSW2AKPSCAWDEPNo6FEv0m0okiHcsHgKw" />
     
 
     <!-- RSS -->
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html">
+    <meta property="og:url" content="https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Nginx防止DDOS攻击配置 | ShenYan&#39;s Notes">
+    <meta property="og:title" content="Linux控制台下 screen 命令使用学习笔记 | ShenYan&#39;s Notes">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是Nginx，主要使用nginx的http_limit_conn和http_limit_req模块来防御。 ngx_http_limit_conn_module 可以限制单个IP的连接数，ngx_http_limit_req_module可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。">
-    <meta property="og:article:tag" content="DDOS"> <meta property="og:article:tag" content="Nginx"> 
+    <meta property="og:description" content="creen 是一个非常有用的命令，提供从单个 SSH 会话中使用多个 shell 窗口（会话）的能力。当会话被分离或网络中断时，screen 会话中启动的进程仍将运行，你可以随时重新连接到 screen 会话。如果你想运行一个持久的进程或者从多个位置连接到 shell 会话，这也很方便。">
+    <meta property="og:article:tag" content="screen"> 
 
     
-        <meta property="article:published_time" content="Sat Dec 02 2017 10:46:37 GMT+0800">
-        <meta property="article:modified_time" content="Sat Dec 09 2017 08:41:43 GMT+0800">
+        <meta property="article:published_time" content="Sun Dec 03 2017 12:27:37 GMT+0800">
+        <meta property="article:modified_time" content="Sat Dec 09 2017 08:41:37 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html" />
+        <link rel="canonical" href="https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html",
-    "headline": "Nginx防止DDOS攻击配置",
-    "datePublished": "Sat Dec 02 2017 10:46:37 GMT+0800",
-    "dateModified": "Sat Dec 09 2017 08:41:43 GMT+0800",
+    "mainEntityOfPage": "https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html",
+    "headline": "Linux控制台下 screen 命令使用学习笔记",
+    "datePublished": "Sun Dec 03 2017 12:27:37 GMT+0800",
+    "dateModified": "Sat Dec 09 2017 08:41:37 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Shen Yan",
@@ -284,8 +284,8 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",DDOS,NginxPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
-    "description": "防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是Nginx，主要使用nginx的http_limit_conn和http_limit_req模块来防御。 ngx_http_limit_conn_module 可以限制单个IP的连接数，ngx_http_limit_req_module可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。",
+    "keywords": ",screenPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
+    "description": "creen 是一个非常有用的命令，提供从单个 SSH 会话中使用多个 shell 窗口（会话）的能力。当会话被分离或网络中断时，screen 会话中启动的进程仍将运行，你可以随时重新连接到 screen 会话。如果你想运行一个持久的进程或者从多个位置连接到 shell 会话，这也很方便。",
 }
 </script>
 
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一-限制每秒请求数"><span class="post-toc-number">1.</span> <span class="post-toc-text">一. 限制每秒请求数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#参数说明："><span class="post-toc-number">1.1.</span> <span class="post-toc-text">参数说明：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二-限制IP连接数"><span class="post-toc-number">2.</span> <span class="post-toc-text">二.限制IP连接数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三-白名单设置"><span class="post-toc-number">3.</span> <span class="post-toc-text">三.白名单设置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四-测试"><span class="post-toc-number">4.</span> <span class="post-toc-text">四.测试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#被限制连接数："><span class="post-toc-number">4.1.</span> <span class="post-toc-text">被限制连接数：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#被限制请求数："><span class="post-toc-number">4.2.</span> <span class="post-toc-text">被限制请求数：</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#五-其它一些防CC的方法"><span class="post-toc-number">5.</span> <span class="post-toc-text">五.其它一些防CC的方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">1.Nginx模块 ModSecurity、http_guard、ngx_lua_waf</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-软件-Iptables"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">2.软件+Iptables</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、背景"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、背景</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、简介"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#会话恢复"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">会话恢复</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#多窗口"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">多窗口</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#会话共享"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">会话共享</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、语法"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#参数说明"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">参数说明</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#四、常用screen参数"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、常用screen参数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#在每个screen-session-下，所有命令都以-ctrl-a-C-a-开始。"><span class="post-toc-number">4.0.1.</span> <span class="post-toc-text">在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始。</span></a></li></ol></li></ol></li></ol>
     </ul>
     
 
@@ -382,7 +382,7 @@
         
     
             <p class="article-headline-p">
-                Nginx防止DDOS攻击配置
+                Linux控制台下 screen 命令使用学习笔记
             </p>
         </div>
 
@@ -401,7 +401,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Shen Yan</strong>
-        <span>12月 02, 2017</span>
+        <span>12月 03, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -425,7 +425,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/DDOS/">DDOS</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Nginx/">Nginx</a>
+        <a class="post_tag-link" href="/tags/screen/">screen</a>
     </ul>
     
 
@@ -442,7 +442,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Nginx防止DDOS攻击配置&url=https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Linux控制台下 screen 命令使用学习笔记&url=https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -451,7 +451,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Nginx防止DDOS攻击配置&url=https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html&via=Shen Yan" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Linux控制台下 screen 命令使用学习笔记&url=https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html&via=Shen Yan" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -460,7 +460,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -469,7 +469,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -481,7 +481,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=Nginx防止DDOS攻击配置&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=Linux控制台下 screen 命令使用学习笔记&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/Linux控制台下-screen-命令使用学习笔记.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -500,64 +500,123 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是<code>Nginx</code>，主要使用<code>nginx</code>的<code>http_limit_conn</code>和<code>http_limit_req</code>模块来防御。 <code>ngx_http_limit_conn_module</code> 可以限制单个IP的连接数，<code>ngx_http_limit_req_module</code>可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。<br><a id="more"></a><br>下面是配置方法：</p>
-<h2 id="一-限制每秒请求数"><a href="#一-限制每秒请求数" class="headerlink" title="一. 限制每秒请求数"></a>一. 限制每秒请求数</h2><p><code>ngx_http_limit_req_module</code>模块通过漏桶原理来限制单位时间内的请求数，一旦单位时间内请求数超过限制，就会返回503错误。配置需要在两个地方设置：</p>
-<p><code>nginx.conf</code>的http段内定义触发条件，可以有多个条件<br>在<code>location</code>内定义达到触发条件时<code>nginx</code>所要执行的动作<br>例如：</p>
-<pre><code>http {
-     limit_req_zone $binary_remote_addr zone=one:10m rate=10r/s; 
-//触发条件，所有访问ip 限制每秒10个请求     ...     
-server { 
-        ...         
-location  ~ \.php$ {
-             limit_req zone=one burst=5 nodelay;   //执行的动作,通过zone名字对应               
- }           
- }     
- } 
-</code></pre><h3 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h3><p><code>$binary_remote_addr</code> 二进制远程地址<br><code>zone=one:10m</code> 定义zone名字叫one，并为这个zone分配10M内存，用来存储会话（二进制远程地址），1m内存可以保存16000会话<br><code>rate=10r/s;</code> 限制频率为每秒10个请求<br><code>burst=5</code> 允许超过频率限制的请求数不多于5个，假设1、2、3、4秒请求为每秒9个，那么第5秒内请求15个是允许的，反之，如果第一秒内请求15个，会将5个请求放到第二秒，第二秒内超过10的请求直接503，类似多秒内平均速率限制。<br><code>nodelay</code> 超过的请求不被延迟处理，设置后15个请求在1秒内处理。</p>
-<h2 id="二-限制IP连接数"><a href="#二-限制IP连接数" class="headerlink" title="二.限制IP连接数"></a>二.限制IP连接数</h2><p><code>ngx_http_limit_conn_module</code>的配置方法和参数与<code>http_limit_req</code>模块很像，参数少，要简单很多</p>
-<pre><code>http {
-     limit_conn_zone $binary_remote_addr zone=addr:10m; //触发条件     ...     
-server { 
-        ...         
-location /download/ {  
-           limit_conn addr 1;    // 限制同一时间内1个连接，超出的连接返回503  
-               }  
-          }   
-   }   
-</code></pre><h2 id="三-白名单设置"><a href="#三-白名单设置" class="headerlink" title="三.白名单设置"></a>三.白名单设置</h2><p><code>http_limit_conn</code> 和<code>http_limit_req</code>模块限制了单ip单位时间内的并发和请求数，但是如果<code>Nginx</code>前面有lvs或者haproxy之类的负载均衡或者反向代 理，<code>nginx</code>获取的都是来自负载均衡的连接或请求，这时不应该限制负载均衡的连接和请求，就需要geo和map模块设置白名单：</p>
-<pre><code>geo $whiteiplist {
-
- default 1; 10.11.15.161 0; 
-
-} map $whiteiplist $limit {
-
- 1 $binary_remote_addr; 0 &quot;&quot;; 
-
-} 
-limit_req_zone $limit zone=one:10m rate=10r/s;
-
-limit_conn_zone $limit zone=addr:10m;
-</code></pre><p>geo模块定义了一个默认值是1的变量<code>whiteiplist</code>，当在ip在白名单中，变量<code>whiteiplist</code>的值为0，反之为1<br>如果在白名单中–&gt; whiteiplist=0 –&gt; $limit=”” –&gt; 不会存储到10m的会话状态（one或者addr）中 –&gt; 不受限制<br>反之，不在白名单中 –&gt; whiteiplist=1 –&gt; $limit=二进制远程地址 –&gt;存储进10m的会话状态中 –&gt; 受到限制</p>
-<h2 id="四-测试"><a href="#四-测试" class="headerlink" title="四.测试"></a>四.测试</h2><p>使用ab命令来模拟CC攻击，<code>http_limit_conn</code>和<code>http_limit_req</code>模块要分开测试，同时注意<code>http_limit_conn</code>模块只统计正在被处理的请求（这些请求的头信息已被完全读入）所 在的连接。如果请求已经处理完，连接没有被关闭时，是不会被统计的。这时用<code>netstat</code>看到连接数可以超过限定的数量，不会被阻止。<br><code>ab -n 请求数 -c 并发 http://10.11.15.174/i.php</code></p>
-<p>如果被阻止前台会返回503，同时在nginx的error_log中会看到如下错误日志：</p>
-<h3 id="被限制连接数："><a href="#被限制连接数：" class="headerlink" title="被限制连接数："></a>被限制连接数：</h3><p><code>2015/01/28 14:20:26 [error] 4107#0: *65525 limiting connections by zone &quot;addr&quot;, client: 10.11.15.161, server: , request: &quot;GET /i.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42 HTTP/1.1&quot;, host: &quot;10.11.15.174&quot;, referrer: &quot;http://10.11.15.174/i.php&quot;</code></p>
-<h3 id="被限制请求数："><a href="#被限制请求数：" class="headerlink" title="被限制请求数："></a>被限制请求数：</h3><p><code>2015/01/28 14:18:59 [error] 4095#0: *65240 limiting requests, excess: 5.772 by zone &quot;one&quot;, client: 10.11.15.161, server: , request: &quot;GET /i.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42 HTTP/1.1&quot;, host: &quot;10.11.15.174&quot;, referrer: &quot;http://10.11.15.174/i.php&quot;</code></p>
-<h2 id="五-其它一些防CC的方法"><a href="#五-其它一些防CC的方法" class="headerlink" title="五.其它一些防CC的方法"></a>五.其它一些防CC的方法</h2><h3 id="1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf"><a href="#1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf" class="headerlink" title="1.Nginx模块 ModSecurity、http_guard、ngx_lua_waf"></a>1.<code>Nginx</code>模块 <code>ModSecurity</code>、<code>http_guard</code>、<code>ngx_lua_waf</code></h3><ul>
-<li><code>ModSecurity</code> 应用层WAF，功能强大，能防御的攻击多，配置复杂</li>
-<li><code>ngx_lua_waf</code> 基于<code>ngx_lua</code>的<code>web</code>应用防火墙，使用简单，高性能和轻量级</li>
-<li><p><code>http_guard</code> 基于<code>openresty</code></p>
-<h3 id="2-软件-Iptables"><a href="#2-软件-Iptables" class="headerlink" title="2.软件+Iptables"></a>2.软件+Iptables</h3></li>
-<li><p><code>fail2ban</code> 通过分析日志来判断是否使用iptables拦截</p>
-</li>
-<li><code>DDoS Deflate</code> 通过<code>netstat</code>判断ip连接数，并使用<code>iptables</code>屏蔽</li>
-</ul>
-<p>开头说过抗DDOS是一个系统工程，通过优化系统和软件配置，只能防御小规模的CC攻击，对于大规模攻击、四层流量攻击、混合攻击来说，基本上系统和应用软件没挂，带宽就打满了。下面是我使用过的防御DDOS的方式：</p>
-<ul>
-<li>高防服务器和带流量清洗的ISP<br>通常是美韩的服务器，部分ISP骨干供应商有流量清洗服务，例如香港的PCCW。通常可以防御10G左右的小型攻击</li>
-<li>流量清洗服务 例如：akamai(prolexic),nexusguard </li>
-<li>CDN 例如：蓝讯 网宿 cloudflare<br>等，CDN针对DDOS的分布式特点，将流量引流分散，同时对网站又有加速作用，效果好，成本相对低。</li>
-</ul>
-<p>总结一下：发动攻击易，防御难。七层好防，四层难防；小型能防，大型烧钱</p>
+        <p>screen 是一个非常有用的命令，提供从单个 SSH 会话中使用多个 shell 窗口（会话）的能力。当会话被分离或网络中断时，screen 会话中启动的进程仍将运行，你可以随时重新连接到 screen 会话。如果你想运行一个持久的进程或者从多个位置连接到 shell 会话，这也很方便。<br><a id="more"></a></p>
+<h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><p>系统管理员经常需要SSH 或者telent 远程登录到Linux 服务器，经常运行一些需要很长时间才能完成的任务，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为它们执行的时间太长了。必须等待它们执行完毕，在此期间不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。</p>
+<h2 id="二、简介"><a href="#二、简介" class="headerlink" title="二、简介"></a>二、简介</h2><p>GNU Screen是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。</p>
+<p>GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。</p>
+<h3 id="会话恢复"><a href="#会话恢复" class="headerlink" title="会话恢复"></a>会话恢复</h3><p>只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行screen -r就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令detach，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。</p>
+<h3 id="多窗口"><a href="#多窗口" class="headerlink" title="多窗口"></a>多窗口</h3><p>在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。</p>
+<h3 id="会话共享"><a href="#会话共享" class="headerlink" title="会话共享"></a>会话共享</h3><p>Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。</p>
+<h2 id="三、语法"><a href="#三、语法" class="headerlink" title="三、语法"></a>三、语法</h2><p><code>screen -AmRvx -ls -wipe-h &lt;行数&gt;-s</code></p>
+<h3 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:center">中文说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-A</td>
+<td style="text-align:center">将所有的视窗都调整为目前终端机的大小。</td>
+</tr>
+<tr>
+<td style="text-align:center">-d &lt;作业名称&gt; 　</td>
+<td style="text-align:center">将指定的screen作业离线。</td>
+</tr>
+<tr>
+<td style="text-align:center">-h&lt;行数&gt; 　</td>
+<td style="text-align:center">指定视窗的缓冲区行数。</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:center">即使目前已在作业中的screen作业，仍强制建立新的screen作业。</td>
+</tr>
+<tr>
+<td style="text-align:center">-r &lt;作业名称&gt; 　</td>
+<td style="text-align:center">恢复离线的screen作业。</td>
+</tr>
+<tr>
+<td style="text-align:center">-R 　</td>
+<td style="text-align:center">先试图恢复离线的作业。若找不到离线的作业，即建立新的screen作业。</td>
+</tr>
+<tr>
+<td style="text-align:center">-s 　</td>
+<td style="text-align:center">指定建立新视窗时，所要执行的shell。</td>
+</tr>
+<tr>
+<td style="text-align:center">-S &lt;作业名称&gt; 　</td>
+<td style="text-align:center">指定screen作业的名称。</td>
+</tr>
+<tr>
+<td style="text-align:center">-v 　</td>
+<td style="text-align:center">显示版本信息。</td>
+</tr>
+<tr>
+<td style="text-align:center">-x 　</td>
+<td style="text-align:center">恢复之前离线的screen作业。</td>
+</tr>
+<tr>
+<td style="text-align:center">-ls或–list 　</td>
+<td style="text-align:center">显示目前所有的screen作业。</td>
+</tr>
+<tr>
+<td style="text-align:center">-wipe 　</td>
+<td style="text-align:center">检查目前所有的screen作业，并删除已经无法使用的screen作业。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="四、常用screen参数"><a href="#四、常用screen参数" class="headerlink" title="四、常用screen参数"></a>四、常用screen参数</h2><p><code>screen -S yourname</code> -&gt; 新建一个叫yourname的session<br><code>screen -ls</code> -&gt; 列出当前所有的session<br><code>screen -r yourname</code> -&gt; 回到yourname这个session<br><code>screen -d yourname</code> -&gt; 远程detach某个session<br><code>screen -d -r yourname</code> -&gt; 结束当前session并回到yourname这个session</p>
+<h4 id="在每个screen-session-下，所有命令都以-ctrl-a-C-a-开始。"><a href="#在每个screen-session-下，所有命令都以-ctrl-a-C-a-开始。" class="headerlink" title="在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始。"></a>在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始。</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">Ctrl+a ?</th>
+<th style="text-align:center">显示所有键绑定信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ctrl+a w</td>
+<td style="text-align:center">显示所有窗口列表</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a Ctrl+a</td>
+<td style="text-align:center">切换到之前显示的窗口</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a c</td>
+<td style="text-align:center">创建一个新的运行shell的窗口并切换到该窗口</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a n</td>
+<td style="text-align:center">切换到下一个窗口</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a p</td>
+<td style="text-align:center">切换到前一个窗口(与Ctrl+a n相对)</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a 0..9</td>
+<td style="text-align:center">切换到窗口0..9</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a a</td>
+<td style="text-align:center">发送 Ctrl+a到当前窗口</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a d</td>
+<td style="text-align:center">暂时断开screen会话</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a k</td>
+<td style="text-align:center">杀掉当前窗口</td>
+</tr>
+<tr>
+<td style="text-align:center">Ctrl+a [</td>
+<td style="text-align:center">进入拷贝/回滚模式</td>
+</tr>
+</tbody>
+</table>
 
         
     
@@ -604,7 +663,7 @@ limit_conn_zone $limit zone=addr:10m;
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/12/03/Linux控制台下-screen-命令使用学习笔记.html" id="post_nav-newer" class="prev-content">
+        <a href="/Linux下载指令wget命令详解.html" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -618,7 +677,7 @@ limit_conn_zone $limit zone=addr:10m;
 
     <!-- Next Nav -->
     
-        <a href="/2017/11/30/让VIM支持Nginx-conf文件语法高亮显示.html" id="post_nav-older" class="next-content">
+        <a href="/Nginx防止DDOS攻击配置.html" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">

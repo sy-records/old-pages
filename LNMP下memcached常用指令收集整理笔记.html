@@ -43,7 +43,7 @@
     
     <title>
         
-            为什么要用Nginx? | 
+            LNMP下memcached常用指令收集整理笔记 | 
         
         ShenYan&#39;s Notes
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。">
-    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,Nginx">
+    <meta name="description" itemprop="description" content="为了使用 memcached 方便就收集整理了一些有关 memcached 相关的常用命令和基本状态的中文说明，就当是个学习笔记了">
+    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,LNMP">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ShenYan&#39;s Notes">
-    <meta name="msapplication-starturl" content="https://iphper.cn/2018/02/16/为什么要用Nginx.html">
+    <meta name="msapplication-starturl" content="https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ShenYan&#39;s Notes">
@@ -223,7 +223,7 @@
     <link rel="apple-touch-icon" href="/img/favicon.png">
 
     <!-- Site Verification -->
-    
+    <meta name="google-site-verification" content="ClZyNYMh8qmSW2AKPSCAWDEPNo6FEv0m0okiHcsHgKw" />
     
 
     <!-- RSS -->
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://iphper.cn/2018/02/16/为什么要用Nginx.html">
+    <meta property="og:url" content="https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="为什么要用Nginx? | ShenYan&#39;s Notes">
+    <meta property="og:title" content="LNMP下memcached常用指令收集整理笔记 | ShenYan&#39;s Notes">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。">
-    <meta property="og:article:tag" content="Nginx"> 
+    <meta property="og:description" content="为了使用 memcached 方便就收集整理了一些有关 memcached 相关的常用命令和基本状态的中文说明，就当是个学习笔记了">
+    <meta property="og:article:tag" content="LNMP"> 
 
     
-        <meta property="article:published_time" content="Fri Feb 16 2018 11:30:42 GMT+0800">
-        <meta property="article:modified_time" content="Mon Jun 11 2018 19:47:42 GMT+0800">
+        <meta property="article:published_time" content="Sun Nov 26 2017 11:16:08 GMT+0800">
+        <meta property="article:modified_time" content="Sat Dec 09 2017 08:41:40 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://iphper.cn/2018/02/16/为什么要用Nginx.html" />
+        <link rel="canonical" href="https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://iphper.cn/2018/02/16/为什么要用Nginx.html",
-    "headline": "为什么要用Nginx?",
-    "datePublished": "Fri Feb 16 2018 11:30:42 GMT+0800",
-    "dateModified": "Mon Jun 11 2018 19:47:42 GMT+0800",
+    "mainEntityOfPage": "https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html",
+    "headline": "LNMP下memcached常用指令收集整理笔记",
+    "datePublished": "Sun Nov 26 2017 11:16:08 GMT+0800",
+    "dateModified": "Sat Dec 09 2017 08:41:40 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Shen Yan",
@@ -284,8 +284,8 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",NginxPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
-    "description": "Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。",
+    "keywords": ",LNMPPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
+    "description": "为了使用 memcached 方便就收集整理了一些有关 memcached 相关的常用命令和基本状态的中文说明，就当是个学习笔记了",
 }
 </script>
 
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1、作为-Web-服务器："><span class="post-toc-number">1.</span> <span class="post-toc-text">1、作为 Web 服务器：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2、Nginx-配置简洁-Apache-复杂："><span class="post-toc-number">2.</span> <span class="post-toc-text">2、Nginx 配置简洁, Apache 复杂：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3、最核心的区别在于："><span class="post-toc-number">3.</span> <span class="post-toc-text">3、最核心的区别在于：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4、两者的擅长领域分别是："><span class="post-toc-number">4.</span> <span class="post-toc-text">4、两者的擅长领域分别是：</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动memcached服务端程序"><span class="post-toc-number">1.</span> <span class="post-toc-text">启动memcached服务端程序</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#各个参数的详解"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">各个参数的详解</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#结束-memcached"><span class="post-toc-number">2.</span> <span class="post-toc-text">结束 memcached</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#查看-memcached-的运行状态"><span class="post-toc-number">3.</span> <span class="post-toc-text">查看 memcached 的运行状态</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#实时查看-memcached-的运行状态"><span class="post-toc-number">4.</span> <span class="post-toc-text">实时查看 memcached 的运行状态</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#快速清空"><span class="post-toc-number">5.</span> <span class="post-toc-text">快速清空</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#查看-memcached-的状态"><span class="post-toc-number">6.</span> <span class="post-toc-text">查看 memcached 的状态</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#这些状态的说明如下"><span class="post-toc-number">7.</span> <span class="post-toc-text">这些状态的说明如下</span></a></li></ol>
     </ul>
     
 
@@ -382,7 +382,7 @@
         
     
             <p class="article-headline-p">
-                为什么要用Nginx?
+                LNMP下memcached常用指令收集整理笔记
             </p>
         </div>
 
@@ -401,7 +401,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Shen Yan</strong>
-        <span>2月 16, 2018</span>
+        <span>11月 26, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -425,7 +425,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Nginx/">Nginx</a>
+        <a class="post_tag-link" href="/tags/LNMP/">LNMP</a>
     </ul>
     
 
@@ -442,7 +442,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=为什么要用Nginx?&url=https://iphper.cn/2018/02/16/为什么要用Nginx.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=LNMP下memcached常用指令收集整理笔记&url=https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -451,7 +451,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=为什么要用Nginx?&url=https://iphper.cn/2018/02/16/为什么要用Nginx.html&via=Shen Yan" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=LNMP下memcached常用指令收集整理笔记&url=https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html&via=Shen Yan" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -460,7 +460,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/2018/02/16/为什么要用Nginx.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -469,7 +469,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/2018/02/16/为什么要用Nginx.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -481,7 +481,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=为什么要用Nginx?&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/2018/02/16/为什么要用Nginx.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=LNMP下memcached常用指令收集整理笔记&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/LNMP下memcached常用指令收集整理笔记.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -500,15 +500,116 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。</p>
-<a id="more"></a>
-<p>目前 Nginx 的主力竞争对手莫过于 Apache ，在这里对两者做一个简单的对比，帮助大家更好的理解 Nginx 的优势。</p>
-<h3 id="1、作为-Web-服务器："><a href="#1、作为-Web-服务器：" class="headerlink" title="1、作为 Web 服务器："></a>1、作为 Web 服务器：</h3><p>相比 Apache，Nginx 使用更少的资源，支持更多的并发连接，体现更高的效率，这点使 Nginx 尤其受到虚拟主机提供商的欢迎。在高连接并发的情况下，Nginx是Apache服务器不错的替代品: Nginx在美国是做虚拟主机生意的老板们经常选择的软件平台之一，能够支持高达 50000 个并发连接数的响应, 感谢Nginx 为我们选择了 epoll and kqueue 作为开发模型。</p>
-<p>Nginx作为负载均衡服务器: Nginx 既可以在内部直接支持 Rails 和 PHP 程序对外进行服务, 也可以支持作为 HTTP代理 服务器对外进行服务。Nginx采用C进行编写, 不论是系统资源开销还是CPU使用效率都比 Perlbal 要好很多。</p>
-<h3 id="2、Nginx-配置简洁-Apache-复杂："><a href="#2、Nginx-配置简洁-Apache-复杂：" class="headerlink" title="2、Nginx 配置简洁, Apache 复杂："></a>2、Nginx 配置简洁, Apache 复杂：</h3><p>Nginx 启动特别容易, 并且几乎可以做到7*24不间断运行，即使运行数个月也不需要重新启动. 你还能够不间断服务的情况下进行软件版本的升级。</p>
-<p>Nginx 静态处理性能比 Apache 高 3倍以上，Apache 对 PHP 支持比较简单，Nginx 需要配合其他后端来使用 ,Apache 的组件比 Nginx 多。</p>
-<h3 id="3、最核心的区别在于："><a href="#3、最核心的区别在于：" class="headerlink" title="3、最核心的区别在于："></a>3、最核心的区别在于：</h3><p>apache是同步多进程模型，一个连接对应一个进程；nginx是异步的，多个连接（万级别）可以对应一个进程 。</p>
-<h3 id="4、两者的擅长领域分别是："><a href="#4、两者的擅长领域分别是：" class="headerlink" title="4、两者的擅长领域分别是："></a>4、两者的擅长领域分别是：</h3><p>nginx的优势是处理静态请求，cpu内存使用率低，apache适合处理动态请求，所以现在一般前端用nginx作为反向代理抗住压力，apache作为后端处理动态请求。</p>
+        <p>为了使用 memcached 方便就收集整理了一些有关 memcached 相关的常用命令和基本状态的中文说明，就当是个学习笔记了<br><a id="more"></a></p>
+<h2 id="启动memcached服务端程序"><a href="#启动memcached服务端程序" class="headerlink" title="启动memcached服务端程序"></a>启动memcached服务端程序</h2><pre><code>memcached -d -m 10 -u root -l localhost -p 11211 -c 256 -P &#x2F;tmp&#x2F;memcached.pid</code></pre>
+<h3 id="各个参数的详解"><a href="#各个参数的详解" class="headerlink" title="各个参数的详解"></a>各个参数的详解</h3><blockquote><p>-d选项是启动一个守护进程，<br>-m是分配给 Memcached 使用的内存数量，单位是MB,<br>-u是运行 Memcached 的用户，我这里是root，<br>-l是监听的服务器IP地址,<br>-p是设置 Memcached 监听的端口，最好是1024以上的端口，<br>-c选项是最大运行的并发连接数，默认是1024,按照你服务器的负载量来设定，<br>-P是设置保存 Memcached 的pid文件</p>
+</blockquote>
+<h2 id="结束-memcached"><a href="#结束-memcached" class="headerlink" title="结束 memcached"></a>结束 memcached</h2><pre><code>kill ‘cat &#x2F;tmp&#x2F;memcached.pid’</code></pre>
+<h2 id="查看-memcached-的运行状态"><a href="#查看-memcached-的运行状态" class="headerlink" title="查看 memcached 的运行状态"></a>查看 memcached 的运行状态</h2><pre><code>echo stats | nc 192.168.1.253 11211</code></pre>
+<h2 id="实时查看-memcached-的运行状态"><a href="#实时查看-memcached-的运行状态" class="headerlink" title="实时查看 memcached 的运行状态"></a>实时查看 memcached 的运行状态</h2><pre><code>Watch “echo stats | nc 192.168.1.253 11211”</code></pre>
+<h2 id="快速清空"><a href="#快速清空" class="headerlink" title="快速清空"></a>快速清空</h2><pre><code>Echo “flush_all” | nc 192.168.1.253 11211</code></pre>
+<p>需要有nc命令才能查看，没有请安装，CentOS下可以用命令：<code>yum install nc</code>来直接安装的。</p>
+<h2 id="查看-memcached-的状态"><a href="#查看-memcached-的状态" class="headerlink" title="查看 memcached 的状态"></a>查看 memcached 的状态</h2><pre><code>telnet 192.168.1.253 11211</code></pre>
+<p>然后输入：<br><pre><code>stats</code></pre><br>即可浏览查看 memcached 的当前状态了，当然上面的“实时查看 memcached 的运行状态”和“查看 memcached 的运行状态”实现的是同样的结果。</p>
+<h2 id="这些状态的说明如下"><a href="#这些状态的说明如下" class="headerlink" title="这些状态的说明如下"></a>这些状态的说明如下</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">英文标识</th>
+<th style="text-align:center">中文释义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">pid</td>
+<td style="text-align:center">memcache服务器的进程ID</td>
+</tr>
+<tr>
+<td style="text-align:center">uptime</td>
+<td style="text-align:center">服务器已经运行的秒数</td>
+</tr>
+<tr>
+<td style="text-align:center">time</td>
+<td style="text-align:center">服务器当前的unix时间戳</td>
+</tr>
+<tr>
+<td style="text-align:center">version</td>
+<td style="text-align:center">memcache 版本</td>
+</tr>
+<tr>
+<td style="text-align:center">pointer_size</td>
+<td style="text-align:center">当前操作系统的指针大小（32位系统一般是32bit）</td>
+</tr>
+<tr>
+<td style="text-align:center">rusage_user</td>
+<td style="text-align:center">进程的累计用户时间</td>
+</tr>
+<tr>
+<td style="text-align:center">rusage_system</td>
+<td style="text-align:center">进程的累计系统时间</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">curr_items</td>
+<td style="text-align:center">服务器当前存储的items数量</td>
+</tr>
+<tr>
+<td style="text-align:center">total_items</td>
+<td style="text-align:center">从服务器启动以后存储的items总数量</td>
+</tr>
+<tr>
+<td style="text-align:center">bytes</td>
+<td style="text-align:center">当前服务器存储items占用的字节数</td>
+</tr>
+<tr>
+<td style="text-align:center">curr_connections</td>
+<td style="text-align:center">当前打开着的连接数</td>
+</tr>
+<tr>
+<td style="text-align:center">total_connections</td>
+<td style="text-align:center">从服务器启动以后曾经打开过的连接数</td>
+</tr>
+<tr>
+<td style="text-align:center">connection_structures</td>
+<td style="text-align:center">服务器分配的连接构造数</td>
+</tr>
+<tr>
+<td style="text-align:center">cmd_get</td>
+<td style="text-align:center">get命令（获取）总请求次数</td>
+</tr>
+<tr>
+<td style="text-align:center">cmd_set</td>
+<td style="text-align:center">set 命令（保存）总请求次数</td>
+</tr>
+<tr>
+<td style="text-align:center">get_hits</td>
+<td style="text-align:center">总命中次数</td>
+</tr>
+<tr>
+<td style="text-align:center">get_misses</td>
+<td style="text-align:center">总未命中次数</td>
+</tr>
+<tr>
+<td style="text-align:center">evictions</td>
+<td style="text-align:center">为获取空闲内存而删除的items数（分配给memcache的空间用满后需要删除旧的items来得到空间分配给新的items）</td>
+</tr>
+<tr>
+<td style="text-align:center">bytes_read</td>
+<td style="text-align:center">总读取字节数（请求字节数）</td>
+</tr>
+<tr>
+<td style="text-align:center">bytes_written</td>
+<td style="text-align:center">总发送字节数（结果字节数）</td>
+</tr>
+<tr>
+<td style="text-align:center">limit_maxbytes</td>
+<td style="text-align:center">分配给memcache的内存大小（字节）</td>
+</tr>
+<tr>
+<td style="text-align:center">threads</td>
+<td style="text-align:center">当前线程数</td>
+</tr>
+</tbody>
+</table>
 
         
     
@@ -555,7 +656,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/06/11/hello-world.html" id="post_nav-newer" class="prev-content">
+        <a href="/CentOS下yum指令详解.html" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -568,14 +669,6 @@
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 

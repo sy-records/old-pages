@@ -43,7 +43,7 @@
     
     <title>
         
-            解决PhpStorm运行卡顿问题 | 
+            CentOS最常用命令整理 | 
         
         ShenYan&#39;s Notes
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="最近在使用phpstorm开发项目的时候，只要加载javascript文件，不管有多大，如果项目文件数据比较多的话，都能够让phpstorm卡到死机。其中调整过内存设置，关闭过动态提示，使用过phpstorm的安全模式，都不能解决卡的问题。中间也试过放弃phpstorm，改用其他IDE开发。但都没有phpstorm那么好用。">
-    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,Phpstorm">
+    <meta name="description" itemprop="description" content="作为一个使用 CentOS 作为服务器操作系统的博客站长，一定要熟悉了解 CentOS 下的常用命令，这可以有效的提升服务器运维的效率，我认为这些命令其实不用了解其原理和所有参数的意义，只要你能知道它可以做什么就可以了，至于更多的了解可以在以后慢慢积累，其实就是只要求“广度”不要求“深度”。">
+    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,Linux,Centos">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ShenYan&#39;s Notes">
-    <meta name="msapplication-starturl" content="https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html">
+    <meta name="msapplication-starturl" content="https://iphper.cn/CentOS最常用命令整理.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ShenYan&#39;s Notes">
@@ -223,7 +223,7 @@
     <link rel="apple-touch-icon" href="/img/favicon.png">
 
     <!-- Site Verification -->
-    
+    <meta name="google-site-verification" content="ClZyNYMh8qmSW2AKPSCAWDEPNo6FEv0m0okiHcsHgKw" />
     
 
     <!-- RSS -->
@@ -234,16 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html">
+    <meta property="og:url" content="https://iphper.cn/CentOS最常用命令整理.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="解决PhpStorm运行卡顿问题 | ShenYan&#39;s Notes">
+    <meta property="og:title" content="CentOS最常用命令整理 | ShenYan&#39;s Notes">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="最近在使用phpstorm开发项目的时候，只要加载javascript文件，不管有多大，如果项目文件数据比较多的话，都能够让phpstorm卡到死机。其中调整过内存设置，关闭过动态提示，使用过phpstorm的安全模式，都不能解决卡的问题。中间也试过放弃phpstorm，改用其他IDE开发。但都没有phpstorm那么好用。">
-    <meta property="og:article:tag" content="Phpstorm"> 
+    <meta property="og:description" content="作为一个使用 CentOS 作为服务器操作系统的博客站长，一定要熟悉了解 CentOS 下的常用命令，这可以有效的提升服务器运维的效率，我认为这些命令其实不用了解其原理和所有参数的意义，只要你能知道它可以做什么就可以了，至于更多的了解可以在以后慢慢积累，其实就是只要求“广度”不要求“深度”。">
+    <meta property="og:article:tag" content="Linux"> <meta property="og:article:tag" content="Centos"> 
 
     
-        <meta property="article:published_time" content="Sun Dec 17 2017 18:53:56 GMT+0800">
-        <meta property="article:modified_time" content="Sun Dec 17 2017 19:04:37 GMT+0800">
+        <meta property="article:published_time" content="Wed Nov 29 2017 13:04:41 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jun 11 2018 19:50:37 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -251,7 +251,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html" />
+        <link rel="canonical" href="https://iphper.cn/CentOS最常用命令整理.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -263,10 +263,10 @@
 {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "mainEntityOfPage": "https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html",
-    "headline": "解决PhpStorm运行卡顿问题",
-    "datePublished": "Sun Dec 17 2017 18:53:56 GMT+0800",
-    "dateModified": "Sun Dec 17 2017 19:04:37 GMT+0800",
+    "mainEntityOfPage": "https://iphper.cn/CentOS最常用命令整理.html",
+    "headline": "CentOS最常用命令整理",
+    "datePublished": "Wed Nov 29 2017 13:04:41 GMT+0800",
+    "dateModified": "Mon Jun 11 2018 19:50:37 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "Shen Yan",
@@ -284,8 +284,8 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",PhpstormPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
-    "description": "最近在使用phpstorm开发项目的时候，只要加载javascript文件，不管有多大，如果项目文件数据比较多的话，都能够让phpstorm卡到死机。其中调整过内存设置，关闭过动态提示，使用过phpstorm的安全模式，都不能解决卡的问题。中间也试过放弃phpstorm，改用其他IDE开发。但都没有phpstorm那么好用。",
+    "keywords": ",Linux,CentosPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
+    "description": "作为一个使用 CentOS 作为服务器操作系统的博客站长，一定要熟悉了解 CentOS 下的常用命令，这可以有效的提升服务器运维的效率，我认为这些命令其实不用了解其原理和所有参数的意义，只要你能知道它可以做什么就可以了，至于更多的了解可以在以后慢慢积累，其实就是只要求“广度”不要求“深度”。",
 }
 </script>
 
@@ -350,7 +350,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#操作步骤如下："><span class="post-toc-number">1.</span> <span class="post-toc-text">操作步骤如下：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原因："><span class="post-toc-number">2.</span> <span class="post-toc-text">原因：</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文件和目录"><span class="post-toc-number">1.</span> <span class="post-toc-text">文件和目录:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#查看文件内容"><span class="post-toc-number">2.</span> <span class="post-toc-text">查看文件内容:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#文本处理"><span class="post-toc-number">3.</span> <span class="post-toc-text">文本处理:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#查找"><span class="post-toc-number">4.</span> <span class="post-toc-text">查找:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#压缩和解压"><span class="post-toc-number">5.</span> <span class="post-toc-text">压缩和解压:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#yum工具"><span class="post-toc-number">6.</span> <span class="post-toc-text">yum工具:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#网络"><span class="post-toc-number">7.</span> <span class="post-toc-text">网络:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#其他"><span class="post-toc-number">8.</span> <span class="post-toc-text">其他:</span></a></li></ol>
     </ul>
     
 
@@ -382,7 +382,7 @@
         
     
             <p class="article-headline-p">
-                解决PhpStorm运行卡顿问题
+                CentOS最常用命令整理
             </p>
         </div>
 
@@ -401,7 +401,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Shen Yan</strong>
-        <span>12月 17, 2017</span>
+        <span>11月 29, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -425,7 +425,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Phpstorm/">Phpstorm</a>
+        <a class="post_tag-link" href="/tags/Centos/">Centos</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Linux/">Linux</a>
     </ul>
     
 
@@ -442,7 +442,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=解决PhpStorm运行卡顿问题&url=https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CentOS最常用命令整理&url=https://iphper.cn/CentOS最常用命令整理.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -451,7 +451,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=解决PhpStorm运行卡顿问题&url=https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html&via=Shen Yan" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CentOS最常用命令整理&url=https://iphper.cn/CentOS最常用命令整理.html&via=Shen Yan" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -460,7 +460,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/CentOS最常用命令整理.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -469,7 +469,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/CentOS最常用命令整理.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -481,7 +481,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=解决PhpStorm运行卡顿问题&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=CentOS最常用命令整理&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/CentOS最常用命令整理.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -500,19 +500,16 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>最近在使用phpstorm开发项目的时候，只要加载javascript文件，不管有多大，如果项目文件数据比较多的话，都能够让phpstorm卡到死机。其中调整过内存设置，关闭过动态提示，使用过phpstorm的安全模式，都不能解决卡的问题。中间也试过放弃phpstorm，改用其他IDE开发。但都没有phpstorm那么好用。<a id="more"></a></p>
-<p>只要修改两个JAVA虚拟机参数，就彻底解决了卡的问题了。</p>
-<h2 id="操作步骤如下："><a href="#操作步骤如下：" class="headerlink" title="操作步骤如下："></a>操作步骤如下：</h2><ul>
-<li><p>找到phpstorm.vmoptions文件，使用记事本打开。</p>
-</li>
-<li><p>添加以下两行代码：</p>
-<pre><code class="java">-Dawt.usesystemAAFontSettings=lcd  
--Dawt.java2d.opengl=true
-</code></pre>
-</li>
-<li>保存退出 重启phpstorm</li>
-</ul>
-<h2 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h2><p> phpstorm是使用JAVA开发的。由于IDE提供源文件关键字渲染功能，我们对文件的任何编辑或移动鼠标，都会触发渲染操作。而phpstorm默认的JAVA环境并没有利用机器的硬件加速技术去实现实时渲染，因此当然会让系统卡死。而只要在JAVA环境中让系统默认使用硬件加速，就可以解决占用系统资源过大，让phpstorm卡的问题了。</p>
+        <p>作为一个使用 CentOS 作为服务器操作系统的博客站长，一定要熟悉了解 CentOS 下的常用命令，这可以有效的提升服务器运维的效率，我认为这些命令其实不用了解其原理和所有参数的意义，只要你能知道它可以做什么就可以了，至于更多的了解可以在以后慢慢积累，其实就是只要求“广度”不要求“深度”。<br><a id="more"></a></p>
+<h3 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录:"></a>文件和目录:</h3><p><code>cd /home</code> 进入 ‘/home’ 目录<br><code>cd ..</code> 返回上一级目录<br><code>cd ../..</code> 返回上两级目录<br><code>cd -</code> 返回上次所在目录<br><code>cp file1 file2</code> 将file1复制为file2<br><code>cp -a dir1 dir2</code> 复制一个目录<br><code>cp -a /tmp/dir1 .</code> 复制一个目录到当前工作目录（.代表当前目录）<br><code>ls</code> 查看目录中的文件<br><code>ls -a</code> 显示隐藏文件<br><code>ls -l</code> 显示详细信息<br><code>ls -lrt</code> 按时间显示文件（l表示详细列表，r表示反向排序，t表示按时间排序）<br><code>pwd</code> 显示工作路径<br><code>mkdir dir1</code> 创建 ‘dir1’ 目录<br><code>mkdir dir1 dir2</code> 同时创建两个目录<br><code>mkdir -p /tmp/dir1/dir2</code> 创建一个目录树<br><code>mv dir1 dir2</code> 移动/重命名一个目录<br><code>rm -f file1</code> 删除 ‘file1’<br><code>rm -rf dir1</code> 删除 ‘dir1’ 目录及其子目录内容</p>
+<h3 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容:"></a>查看文件内容:</h3><p><code>cat file1</code> 从第一个字节开始正向查看文件的内容<br><code>head -2 file1</code> 查看一个文件的前两行<br><code>more file1</code> 查看一个长文件的内容<br><code>tac file1</code> 从最后一行开始反向查看一个文件的内容<br><code>tail -3 file1</code> 查看一个文件的最后三行</p>
+<h3 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理:"></a>文本处理:</h3><p><code>grep str /tmp/test</code> 在文件 ‘/tmp/test’ 中查找 “str”<br><code>grep ^str /tmp/test</code> 在文件 ‘/tmp/test’ 中查找以 “str” 开始的行<br><code>grep [0-9] /tmp/test</code> 查找 ‘/tmp/test’ 文件中所有包含数字的行<br><code>grep str -r /tmp/*</code> 在目录 ‘/tmp’ 及其子目录中查找 “str”<br><code>diff file1 file2</code> 找出两个文件的不同处<br><code>sdiff file1 file2</code> 以对比的方式显示两个文件的不同</p>
+<h3 id="查找"><a href="#查找" class="headerlink" title="查找:"></a>查找:</h3><p><code>1find / -name file11</code> 从 ‘/‘ 开始进入根文件系统查找文件和目录<br><code>find / -user user1</code> 查找属于用户 ‘user1’ 的文件和目录<br><code>find /home/user1 -name \*.bin</code> 在目录 ‘/ home/user1’ 中查找以 ‘.bin’ 结尾的文件<br><code>find /usr/bin -type f -atime +100</code> 查找在过去100天内未被使用过的执行文件<br><code>find /usr/bin -type f -mtime -10</code> 查找在10天内被创建或者修改过的文件<br><code>locate \*.ps</code> 寻找以 ‘.ps’ 结尾的文件，先运行’updatedb’ 命令<br><code>find -name &#39;*.[ch]&#39; | xargs grep -E &#39;expr&#39;</code>在当前目录及其子目录所有.c和.h文件中查找 ‘expr’<br><code>find -type f -print0 | xargs -r0 grep -F &#39;expr&#39;</code>在当前目录及其子目录的常规文件中查找 ‘expr’<br><code>find -maxdepth 1 -type f | xargs grep -F &#39;expr&#39;</code> 在当前目录中查找 ‘expr’</p>
+<h3 id="压缩和解压"><a href="#压缩和解压" class="headerlink" title="压缩和解压:"></a>压缩和解压:</h3><p><code>bzip2 file1</code> 压缩 file1<br><code>bunzip2 file1.bz2</code> 解压 file1.bz2<br><code>gzip file1</code> 压缩 file1<br><code>gzip -9 file1</code> 最大程度压缩 file1<br><code>gunzip file1.gz</code> 解压 file1.gz<br><code>tar -cvf archive.tar file1</code> 把file1打包成 archive.tar<br>（-c: 建立压缩档案；-v: 显示所有过程；-f: 使用档案名字，是必须的，是最后一个参数）<br><code>tar -cvf archive.tar file1 dir1</code> 把 file1，dir1 打包成 archive.tar<br><code>tar -tf archive.tar</code> 显示一个包中的内容<br><code>tar -xvf archive.tar</code> 释放一个包<br><code>tar -xvf archive.tar -C /tmp</code> 把压缩包释放到 /tmp目录下<br><code>zip file1.zip file1</code> 创建一个zip格式的压缩包<br><code>zip -r file1.zip file1 dir1</code> 把文件和目录压缩成一个zip格式的压缩包<br><code>unzip file1.zip</code> 解压一个zip格式的压缩包到当前目录<br><code>unzip test.zip -d /tmp/</code> 解压一个zip格式的压缩包到 /tmp 目录</p>
+<h3 id="yum工具"><a href="#yum工具" class="headerlink" title="yum工具:"></a>yum工具:</h3><p><code>yum -y install [package]</code> 下载并安装一个rpm包<br><code>yum localinstall [package.rpm]</code> 安装一个rpm包，使用你自己的软件仓库解决所有依赖关系<br><code>yum -y update</code> 更新当前系统中安装的所有rpm包<br><code>yum update [package]</code> 更新一个rpm包<br><code>yum remove [package]</code> 删除一个rpm包<br><code>yum list</code> 列出当前系统中安装的所有包<br><code>yum search [package]</code> 在rpm仓库中搜寻软件包<br><code>yum clean [package]</code> 清除缓存目录（/var/cache/yum）下的软件包<br><code>yum clean headers</code> 删除所有头文件<br><code>yum clean all</code> 删除所有缓存的包和头文件</p>
+<h3 id="网络"><a href="#网络" class="headerlink" title="网络:"></a>网络:</h3><p><code>ifconfig eth0</code> 显示一个以太网卡的配置<br><code>ifconfig eth0 192.168.1.1 netmask 255.255.255.0</code> 配置网卡的IP地址<br><code>ifdown eth0</code> 禁用 ‘eth0’ 网络设备<br><code>ifup eth0</code> 启用 ‘eth0’ 网络设备<br><code>iwconfig eth1</code> 显示一个无线网卡的配置<br><code>iwlist scan</code> 显示无线网络<br><code>ip addr show</code> 显示网卡的IP地址</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他:"></a>其他:</h3><p><code>su -</code> 切换到root权限（与su有区别）<br><code>shutdown -h now</code> 关机<br><code>shutdown -r now</code> 重启<br><code>top</code> 罗列使用CPU资源最多的linux任务 （输入q退出）<br><code>pstree</code> 以树状图显示程序<br><code>man ping</code> 查看参考手册（例如ping 命令）<br><code>passwd</code> 修改密码<br><code>df -h</code> 显示磁盘的使用情况<br><code>cal -3</code> 显示前一个月，当前月以及下一个月的月历<br><code>cal 10 1988</code> 显示指定月，年的月历<br><code>date --date &#39;1970-01-01 UTC 1427888888 seconds&#39;</code> 把一相对于1970-01-01 00:00的秒数转换成时间</p>
+<p>上述这些指令基本上都把一些常用到的参数作为范例了，所以还是很不错的一个参考的，特别是对于新手们来说，我自己也会经常来翻看一下的。</p>
 
         
     
@@ -559,7 +556,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" id="post_nav-newer" class="prev-content">
+        <a href="/让VIM支持Nginx-conf文件语法高亮显示.html" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -573,7 +570,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2017/12/12/CentOS文件操作与压缩命令大全.html" id="post_nav-older" class="next-content">
+        <a href="/一些网页制作中实用的小技巧.html" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
