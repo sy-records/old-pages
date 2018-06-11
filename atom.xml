@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>ShenYan&#39;s Notes</title>
   
-  
+  <subtitle>一个PHPer的成长之路</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sy-records.github.io/"/>
