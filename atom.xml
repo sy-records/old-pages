@@ -5,9 +5,9 @@
   <subtitle>一个PHPer的成长之路</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://sy-records.github.io/"/>
+  <link href="https://iphper.cn/"/>
   <updated>2018-06-11T01:55:23.732Z</updated>
-  <id>https://sy-records.github.io/</id>
+  <id>https://iphper.cn/</id>
   
   <author>
     <name>Shen Yan</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://sy-records.github.io/2018/06/11/hello-world.html"/>
-    <id>https://sy-records.github.io/2018/06/11/hello-world.html</id>
-    <published>2018-06-11T01:55:23.731Z</published>
+    <link href="https://iphper.cn/2018/06/11/hello-world.html"/>
+    <id>https://iphper.cn/2018/06/11/hello-world.html</id>
+    <published>2018-06-11T11:37:30.127Z</published>
     <updated>2018-06-11T01:55:23.732Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
@@ -34,6 +34,322 @@
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>为什么要用Nginx?</title>
+    <link href="https://iphper.cn/2018/02/16/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E7%94%A8Nginx.html"/>
+    <id>https://iphper.cn/2018/02/16/为什么要用Nginx.html</id>
+    <published>2018-02-16T03:30:42.000Z</published>
+    <updated>2018-06-11T11:47:42.768Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。</p><a id="more"></a><p>目前 Nginx 的主力竞争对手莫过于 Apache ，在这里对两者做一个简单的对比，帮助大家更好的理解 Nginx 的优势。</p><h3 id="1、作为-Web-服务器："><a href="#1、作为-Web-服务器：" class="headerlink" title="1、作为 Web 服务器："></a>1、作为 Web 服务器：</h3><p>相比 Apache，Nginx 使用更少的资源，支持更多的并发连接，体现更高的效率，这点使 Nginx 尤其受到虚拟主机提供商的欢迎。在高连接并发的情况下，Nginx是Apache服务器不错的替代品: Nginx在美国是做虚拟主机生意的老板们经常选择的软件平台之一，能够支持高达 50000 个并发连接数的响应, 感谢Nginx 为我们选择了 epoll and kqueue 作为开发模型。</p><p>Nginx作为负载均衡服务器: Nginx 既可以在内部直接支持 Rails 和 PHP 程序对外进行服务, 也可以支持作为 HTTP代理 服务器对外进行服务。Nginx采用C进行编写, 不论是系统资源开销还是CPU使用效率都比 Perlbal 要好很多。</p><h3 id="2、Nginx-配置简洁-Apache-复杂："><a href="#2、Nginx-配置简洁-Apache-复杂：" class="headerlink" title="2、Nginx 配置简洁, Apache 复杂："></a>2、Nginx 配置简洁, Apache 复杂：</h3><p>Nginx 启动特别容易, 并且几乎可以做到7*24不间断运行，即使运行数个月也不需要重新启动. 你还能够不间断服务的情况下进行软件版本的升级。</p><p>Nginx 静态处理性能比 Apache 高 3倍以上，Apache 对 PHP 支持比较简单，Nginx 需要配合其他后端来使用 ,Apache 的组件比 Nginx 多。</p><h3 id="3、最核心的区别在于："><a href="#3、最核心的区别在于：" class="headerlink" title="3、最核心的区别在于："></a>3、最核心的区别在于：</h3><p>apache是同步多进程模型，一个连接对应一个进程；nginx是异步的，多个连接（万级别）可以对应一个进程 。</p><h3 id="4、两者的擅长领域分别是："><a href="#4、两者的擅长领域分别是：" class="headerlink" title="4、两者的擅长领域分别是："></a>4、两者的擅长领域分别是：</h3><p>nginx的优势是处理静态请求，cpu内存使用率低，apache适合处理动态请求，所以现在一般前端用nginx作为反向代理抗住压力，apache作为后端处理动态请求。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Nginx" scheme="https://iphper.cn/categories/Nginx/"/>
+    
+    
+      <category term="Nginx" scheme="https://iphper.cn/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不能掌握Linux的人为什么总被说智商低？</title>
+    <link href="https://iphper.cn/2018/01/14/%E4%B8%8D%E8%83%BD%E6%8E%8C%E6%8F%A1Linux%E7%9A%84%E4%BA%BA%E4%B8%BA%E4%BB%80%E4%B9%88%E6%80%BB%E8%A2%AB%E8%AF%B4%E6%99%BA%E5%95%86%E4%BD%8E%EF%BC%9F.html"/>
+    <id>https://iphper.cn/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html</id>
+    <published>2018-01-14T03:11:41.000Z</published>
+    <updated>2018-01-14T03:16:57.887Z</updated>
+    
+    <content type="html"><![CDATA[<p>Linux操作系统相比于十年前的普及程度已经有了大大提高，但是由于其桌面操作系统上的可视化窗口操作模式并不像Windows操作系统那样直观、完美，<strong>对于一些刚接触Linux的人或者初学者来说入手还是有一定的难度，所以其发展并不是那么迅速</strong>。<a id="more"></a></p><p>但是近年来Linux已经越来越受到重用，它不再仅仅是一些开源发烧友们之间炫耀资本，而且已经在多方面价值得到了体现，尤其在服务器操作系统方面，已经成为资深运维工程师的首选的操作工具。</p><p>随着计算机行业的迅速发展，相信Linux操作系统将不仅仅只停留在平台应用上，他将会在更广的空间展现他那独有的优势与魅力。</p><p>现在对于大多数中国的电脑用户，很少有人自己用Linux操作系统的，而且还有相当一部分人甚至是第一次听说Linux。但这并不奇怪，即使在很多大学生眼里也大都如此。在你们眼里只有Windows，只有微软，比尔盖茨是你们大多数人的偶像。那是微软先入为主的观念造成的，就如我们学习英语一样，如过我们生下来就用英语讲话，周围的人说的也都是英语，那么英语也就自然而然的学会了。而且像汉语一样受我们喜欢。</p><p><strong>有资深Linux用户就吐槽了：</strong>连Linux都学不会，智商真低！</p><p><strong>有程序员哥哥说：</strong>公开场合不要去扯智商，有歧视之嫌。但都是搞技术，你智商咋样，瞒不过别人的眼睛。 看看你的代码就知道，和语言无关。</p><p><strong>有Linux用户说：</strong>因为有太多的人写两行脚本配置下系统就以为掌握了linux， 还有太多的人写个智能指针就以为自己掌握了c++。 就是这样。</p><p><strong>Java大咖问</strong>：跑个题，敢问什么叫掌握linux？</p><p>Linux本质上是学习工具的使用，其实核心与智商无关，林子大了，什么样的人都有。不过既然如此迅猛发展的今天掌握Linux成为必要，那么我们专门为大家收集了一些学习linux的经验，希望对大家有所帮助。</p><h3 id="1、破釜沉舟忘掉Windows的思维方式"><a href="#1、破釜沉舟忘掉Windows的思维方式" class="headerlink" title="1、破釜沉舟忘掉Windows的思维方式"></a>1、破釜沉舟忘掉Windows的思维方式</h3><p>笔者也看过很多有关学习Linux的方法，第一部分基本都是告诉你怎么安装双系统，怎么便利学习。我也是如此，在自己台式机上安装了双系统，但是学习效果并不明显，百思不得其解，一次看到破釜沉舟的故事颇有启发，项羽前锋军救巨鹿，初战少利，项羽便率大军渡过漳河，破釜沉舟以激厉士气。终于杀苏角，虏王离，大败秦军于巨鹿之野。 楚霸王当初能够战胜并不是说他占了多么有利的优势，而是他那一往无前，义无反顾的决心。</p><p>当装了双系统以后，只要遇到一些问题，就会快速切换到Windows操作系统来查资料，这样虽然便利了我们学习，但是我们的大脑却对问题缺少了思考，基本都是去百度知道，问问什么的查，虽然当时解决问题了，但是过后在回忆当时是怎么解决问题的，脑海却是一片空白。我们装的双系统给自己带来便利的同时也给自己找了太多的借口，到头来却没了学习下去的勇气。</p><p>所以后来我把我自己的电脑只安装了Linux操作系统，做什么都从上面去做，逼迫自己学安装浏览器，播放器，文档编辑器，等自己一步步的走过来，才发现，有的时候不是我们没能力去办好一件事，而是我们再没办事之前就给自己想好了各种退路。彻底忘记Windows思维方式，在一个只有Linux操作系统环境下生活。</p><p>如果你想系统的学习Linux，你必需清楚的认识到这一点。如果你真正想系统的学习linux，想用Linux有所作为，那么请忘记Windows的思维方式，思想性的转变比暂时性的技术提高更有用， 而思想上的改变往往是受到我们行动所影响的，有不懂的问题就自己思考，查资料， 实在不会再去找别人的电脑去查，这样就加深了我每次对问题的理解，慢慢感受和习惯Linux的操作方式，总有一天你会真正体验到他的奥妙所在，从而从自己内心深处喜欢他，使用他，而不是为了赶时髦或向人炫耀而使用他。</p><h3 id="2、学习有三要眼要精、笔要动、手要勤"><a href="#2、学习有三要眼要精、笔要动、手要勤" class="headerlink" title="2、学习有三要眼要精、笔要动、手要勤"></a>2、学习有三要眼要精、笔要动、手要勤</h3><ul><li>a.多看一些学习Linux方面的书。要抓住精髓，不要贪多嚼不烂。</li><li>b.多做笔记，好记性不如烂笔头。</li><li>c.实践出真知。很多时候我们都是嘴上功夫，而到了真正自己搭建的时候就会发现自己其实一无所知。</li></ul><h3 id="3、学习要用心学习Linux不是逛自由市场"><a href="#3、学习要用心学习Linux不是逛自由市场" class="headerlink" title="3、学习要用心学习Linux不是逛自由市场"></a>3、学习要用心学习Linux不是逛自由市场</h3><p>经常看到有人问用什么版本的Linux好，其实只要你认真学习无论什么版本都挺好的。要知道，开发Linux发行版的人都是通读过Linux内核代码，对Linux原理极其精通的人，而且每一个开发团队都对他的发行版做过测试后放出的。那些国际知名的大品牌更是如此。</p><p>因此，讨论什么版本好并无意义，关键是你是不是真心想学。不过，为了避免曲高和寡，最好选用的人多的版本，比如RedHat CentOS等等。学习Linux不是逛自由市场，选定版本就要静下心来学习。不要今天换版本明天要升级。这样对你没有好处。例如有些人号称用过十几种甚至几十种Linux，向人谈论起来头头是到，好像懂的很多，但是如果你让他去用Linux搭建一个Web服务器，他就什么都不会了。他们把时间都浪费在了版本的转换上了。</p><h3 id="4、学习不能盲目多用自带的系统文档解决问题"><a href="#4、学习不能盲目多用自带的系统文档解决问题" class="headerlink" title="4、学习不能盲目多用自带的系统文档解决问题"></a>4、学习不能盲目多用自带的系统文档解决问题</h3><p>说到这，我还是有点儿底气不足，因为我自己的英语很差。不过，只要熟悉了计算机专业英语，高中毕业的水平就可以轻松的阅读计算机文档了。如果你的英语实在太差了，连最简单的计算机英语文档都看不懂，那么在学习Linux的同时，请赶紧学习英语。也许你说，你可以看翻译的文档，当我还是一个菜菜鸟的时候，也是这样认为的。</p><p>但是，后来才发现，如果你想深入学习Linux，看不懂英文文档实在是太难了。写的最好的，最全面的文档都是英语写的，最先发布的技术信息也都是用英语写的。即便是非英语国家的人发布技术文档，也都首先翻译成英语在国际学术杂志和网络上发表。你去看看各大软硬件生产商的官方网站，有哪一个不是用英语作为其主站的?长期用Windows的人会很不习惯这一点，装个软件还要看半天文档，因为Windows用起来实在太简单了。但是如果你想学习Linux就必须学会看各种文档，而大部分的文档都是用英语写的。</p><p>现很多人甚至连man文档都不会看，有什么命令不会用了就跑到论坛上来问，还装出一副可怜相，乞讨一个命令的用法。有这些时间还不如自己看看man文档，即使你一个一个单词的翻译成中文再自己看都比问别人强，因为别人的回答再怎么详尽都比不上man文档详尽。安装一个新的软件时先看Readme，再看Install然后看FAQ，最后才动手安装，这样遇到问题就知道为什么。否则，说明文档都不看，结果出了问题再来找答案反而浪费时间! 古人说欲速则不达就是这个道理!</p><h3 id="5、学习要刻苦多记Linux命令"><a href="#5、学习要刻苦多记Linux命令" class="headerlink" title="5、学习要刻苦多记Linux命令"></a>5、学习要刻苦多记Linux命令</h3><p>当你经过一段时间的学习后就应该扩充自己的知识，多学习Linux命令，但是不要在初学阶段就系统的学习Linux命令，初学阶段只要把上课时候学习过的命令练熟就可以了。马哥linux认为：“单靠学习各种命令而成为高手是不可能的，但不会命令而成为高手也是不可能的。”</p><p>这就好比学英语，什么语法都不懂，只捧着单词手册背单词是学不会英语的，但是没有单词词汇量英语水平也提不高的。</p><p>在Linux中学习命令的最好办法是学习Shell脚本编程，Shell脚本比起其他语言来学习简单，但是功能却十分强大。通过学习Shell编程，能让你掌握大量的Linux命令。另外，买一本命令参考手册是必要的，遇到不知道怎么用的命令可以随时查询，这要比查man文档快。特别适合英语不好，看不懂man文档的人。</p><p>在Linux中，命令可分为系统基本命令和应用程序命令。系统基本命令是所有的Unix类系统都支持的命令，走到哪都不变，只要是Unix类系统上就肯定有。</p><h3 id="6、学习要深究了解Linux系统结构以及Linux系统的管理"><a href="#6、学习要深究了解Linux系统结构以及Linux系统的管理" class="headerlink" title="6、学习要深究了解Linux系统结构以及Linux系统的管理"></a>6、学习要深究了解Linux系统结构以及Linux系统的管理</h3><p>等你对Linux有了一定的认识后，知道了/etc下那些配置文件有什么用，就可以去了解系统结构了。了解系统结构不是要你去看什么文件夹放什么内容，而是要学习一些原理性的东西。比如系统是如何引导的，引导后启动了那些东西。系统中哪些是最基本的库文件，有什么用等等。</p><p>接下来就可以进一步学习管理系统。比如学习配置各种网络服务器，用Linux搭建网络，这些都是学习Linux系统管理和网络管理的好方法。 到了这个阶段就可以经常上网查查资料，看看论坛精华区文章，论坛可以让你学到一些小知识，小技巧。</p><h3 id="7、博览群书在时间充足的情况下多看看关于计算机相关的专业课程"><a href="#7、博览群书在时间充足的情况下多看看关于计算机相关的专业课程" class="headerlink" title="7、博览群书在时间充足的情况下多看看关于计算机相关的专业课程"></a>7、博览群书在时间充足的情况下多看看关于计算机相关的专业课程</h3><p>如果你不是计算机专业的，而想把linux学好，就一定要学习专业课程。学习微机原理，操作系统，计算机网络等等专业课程是必需的。为什么同时开始学习linux，有些人学的非常快，不到半年就成了高手，有些人玩来玩去还玩不出名堂，玩了一两年还是菜鸟? 因为那些学得快的人有基础，他们都学过专业课程。同样一篇文档，没有基础的人可能看了三遍还不明白，基础扎实的眼睛扫两下就懂了! 这就是专业和非专业的差别! 因此，要想达到更高的境界就一定要学习基础的专业课程。</p><h3 id="8、态度决定成就最后要永远保持虚心的学习态度"><a href="#8、态度决定成就最后要永远保持虚心的学习态度" class="headerlink" title="8、态度决定成就最后要永远保持虚心的学习态度"></a>8、态度决定成就最后要永远保持虚心的学习态度</h3><p>我想再重复一遍天外有天，人外有人的道理!保持虚心的学习态度不仅能让你学到更多知识，而且会让你受人尊重。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Linux操作系统相比于十年前的普及程度已经有了大大提高，但是由于其桌面操作系统上的可视化窗口操作模式并不像Windows操作系统那样直观、完美，&lt;strong&gt;对于一些刚接触Linux的人或者初学者来说入手还是有一定的难度，所以其发展并不是那么迅速&lt;/strong&gt;。
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://iphper.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下利用mailx结合QQ邮箱发送系统邮件提醒等</title>
+    <link href="https://iphper.cn/2018/01/04/Linux%E4%B8%8B%E5%88%A9%E7%94%A8mailx%E7%BB%93%E5%90%88QQ%E9%82%AE%E7%AE%B1%E5%8F%91%E9%80%81%E7%B3%BB%E7%BB%9F%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E7%AD%89.html"/>
+    <id>https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html</id>
+    <published>2018-01-04T02:52:31.000Z</published>
+    <updated>2018-01-04T03:16:43.775Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：</p><a id="more"></a><p><strong>安装和配置系统的mailx：</strong></p><p>　　这里以服务器首选的Linux发行版CentOS为例（好像默认都已经集成了mailx的，至于说sendmail，感觉效能差，就不做参考了）。</p><p>　　运行命令：</p><p>​    <code>yum -y install mailx</code></p><p>　　即可自动安装mialx了。</p><p>　　安装完成后，编辑<code>/etc/mail.rc</code>文件配置mailx使用QQ邮箱作为发送邮件邮箱。</p><p>　　在配置文件最后添加如下QQ邮箱配置即可：</p><pre><code>set from=xxxxxx@qq.comset smtp=smtps://smtp.qq.com:465set smtp-auth-user=xxxxxx@qq.comset smtp-auth-password=你的QQ邮箱授权码set smtp-auth=login#set smtp-use-starttls 这里是不需要配置的，很多地方没说明，配置了反而会验证失败，所以我注释掉；set ssl-verify=ignoreset nss-config-dir=/root/.certs</code></pre><p>　记得要用到<strong>QQ邮箱的授权码</strong>哦，可以提前复制填到标注的对应位置即可！</p><p>　　因为阿里云ECS封禁了25端口，所以我们只能使用TLS方式（TSL也就是使用SSL加密的方式,使用465或者其他端口来发送邮件）绕过25端口需求来发送邮件，所以必须先获得邮箱的SSL证书并存放到本地，最后一行的<code>nss-config-dir</code>就是制定的存放QQ邮箱SSL证书的位置。</p><p>　　然后保存上述的编辑退出。</p><p>　　因为需要QQ邮箱的SSL证书，所以我们还需要手动的获取QQ邮箱的证书保存到本地指定的目录里以备调用和验证，具体命令如下：</p><pre><code>mkdir -p /root/.certs/echo -n | openssl s_client -connect smtp.qq.com:465 | sed -ne &#39;/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p&#39; &gt; ~/.certs/qq.crtcertutil -A -n &quot;GeoTrust SSL CA&quot; -t &quot;C,,&quot; -d ~/.certs -i ~/.certs/qq.crtcertutil -A -n &quot;GeoTrust Global CA&quot; -t &quot;C,,&quot; -d ~/.certs -i ~/.certs/qq.crtcertutil -L -d /root/.certs</code></pre><p>为了防止出现前文所说的发送邮件警告提示，还需要进入邮箱SSL证书存放目录/root/.certs里执行如下命令：</p><p><code>certutil -A -n &quot;GeoTrust SSL CA - G3&quot; -t &quot;Pu,Pu,Pu&quot; -d ./ -i qq.</code></p><p>返回如下提示即可：</p><pre><code>Notice: Trust flag u is set automatically if the private key is present.</code></pre><p>　这是为了信任证书的标记操作。</p><p>　　至此，已经完成了mailx结合QQ邮箱发送系统邮件的部署了，通过命令行发送测试邮件试试吧：</p><p><code>mailx -s &quot;邮箱测试&quot; xxxx@qq.com &lt; message_file.txt</code></p><p><strong>命令行解读：发送主题为“邮箱测试”，内容为当前目录下message_fiel.txt文件内容到<a href="mailto:xxxx@qq.com" target="_blank" rel="noopener">xxxx@qq.com</a>邮箱。</strong></p><p>　　测试邮件一旦成功，收件箱会马上收到邮件，如果没有收到，则等一会可以看到shell界面的错误提示；反正照着上述设置后是成功收到邮件了，祝大家一次配置成功！ヾ(๑╹◡╹)ﾉ”</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://iphper.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决PhpStorm运行卡顿问题</title>
+    <link href="https://iphper.cn/2017/12/17/%E8%A7%A3%E5%86%B3PhpStorm%E8%BF%90%E8%A1%8C%E5%8D%A1%E9%A1%BF%E9%97%AE%E9%A2%98.html"/>
+    <id>https://iphper.cn/2017/12/17/解决PhpStorm运行卡顿问题.html</id>
+    <published>2017-12-17T10:53:56.000Z</published>
+    <updated>2017-12-17T11:04:37.240Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在使用phpstorm开发项目的时候，只要加载javascript文件，不管有多大，如果项目文件数据比较多的话，都能够让phpstorm卡到死机。其中调整过内存设置，关闭过动态提示，使用过phpstorm的安全模式，都不能解决卡的问题。中间也试过放弃phpstorm，改用其他IDE开发。但都没有phpstorm那么好用。<a id="more"></a></p><p>只要修改两个JAVA虚拟机参数，就彻底解决了卡的问题了。</p><h2 id="操作步骤如下："><a href="#操作步骤如下：" class="headerlink" title="操作步骤如下："></a>操作步骤如下：</h2><ul><li><p>找到phpstorm.vmoptions文件，使用记事本打开。</p></li><li><p>添加以下两行代码：</p><pre><code class="java">-Dawt.usesystemAAFontSettings=lcd  -Dawt.java2d.opengl=true</code></pre></li><li>保存退出 重启phpstorm</li></ul><h2 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h2><p> phpstorm是使用JAVA开发的。由于IDE提供源文件关键字渲染功能，我们对文件的任何编辑或移动鼠标，都会触发渲染操作。而phpstorm默认的JAVA环境并没有利用机器的硬件加速技术去实现实时渲染，因此当然会让系统卡死。而只要在JAVA环境中让系统默认使用硬件加速，就可以解决占用系统资源过大，让phpstorm卡的问题了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在使用phpstorm开发项目的时候，只要加载javascript文件，不管有多大，如果项目文件数据比较多的话，都能够让phpstorm卡到死机。其中调整过内存设置，关闭过动态提示，使用过phpstorm的安全模式，都不能解决卡的问题。中间也试过放弃phpstorm，改用其他IDE开发。但都没有phpstorm那么好用。
+    
+    </summary>
+    
+      <category term="PHP" scheme="https://iphper.cn/categories/PHP/"/>
+    
+    
+      <category term="Phpstorm" scheme="https://iphper.cn/tags/Phpstorm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS文件操作与压缩命令大全</title>
+    <link href="https://iphper.cn/2017/12/12/CentOS%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%E4%B8%8E%E5%8E%8B%E7%BC%A9%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.html"/>
+    <id>https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html</id>
+    <published>2017-12-12T04:39:57.000Z</published>
+    <updated>2018-06-11T11:51:43.063Z</updated>
+    
+    <content type="html"><![CDATA[<p>管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令：<br><a id="more"></a></p><h2 id="文件操作："><a href="#文件操作：" class="headerlink" title="文件操作："></a>文件操作：</h2><p><code>ls</code> ####查看目录中的文件####<br><code>ls -F</code> ####查看目录中的文件####<br><code>ls -l</code> ####显示文件和目录的详细资料####<br><code>ls -a</code> ####显示隐藏文件####<br><code>ls *[0-9]*</code> ####显示包含数字的文件名和目录名####<br><code>rm go.tar</code> #### 删除go.tar文件####<br><code>find mt.cgi</code> ####查找文件名为mt.cgi的文件####<br><code>df ?h</code> ####查看磁盘剩余空间####<br><code>find / -name xxx -print</code> ####查找xxx文件####</p><h2 id="压缩与解压缩："><a href="#压缩与解压缩：" class="headerlink" title="压缩与解压缩："></a>压缩与解压缩：</h2><p><code>tar xvf wordpress.tar</code> ####解压tar格式的文件####<br><code>tar -tvf myfile.tar</code> ####查看tar文件中包含的文件 ####<br><code>tar cf toole.tar tool</code> ####把tool目录打包为toole.tar文件####<br><code>tar cfz xwyme.tar.gz tool</code> ####把tool目录打包且压缩为xwyme.tar.gz文件，因为.tar文件几乎是没有压缩过的，MT的.tar.gz文件解压成.tar文件后差不多是10MB ####<br><code>tar jcvf /var/bak/www.tar.bz2 /var/www/</code> ####创建.tar.bz2文件，压缩率高####<br><code>tar xjf www.tar.bz2</code> ####解压tar.bz2格式####<br><code>gzip -d ge.tar.gz</code> ####解压.tar.gz文件为.tar文件####<br><code>unzip phpbb.zip</code>####解压zip文件，windows下要压缩出一个.tar.gz格式的文件还是有点麻烦的####</p><p><code>bunzip2 file1.bz2</code> ####解压一个叫做 ‘file1.bz2′的文件####<br><code>bzip2 file1</code> ####压缩一个叫做 ‘file1′ 的文件####<br><code>gunzip file1.gz</code> ####解压一个叫做 ‘file1.gz’的文件####<br><code>gzip file1</code> ####压缩一个叫做 ‘file1′的文件####<br><code>gzip -9 file1</code> ####最大程度压缩####<br><code>rar a file1.rar test_file</code> ####创建一个叫做 ‘file1.rar’ 的包####<br><code>rar a file1.rar file1 file2 dir1</code> ####同时压缩 ‘file1′, ‘file2′ 以及目录 ‘dir1′####<br><code>rar x file1.rar</code> ####解压rar包####<br><code>unrar x file1.rar</code> ####解压rar包####<br><code>tar -cvf archive.tar file1</code> ####创建一个非压缩的 tarball####<br><code>tar -cvf archive.tar file1 file2 dir1</code> ####创建一个包含了 ‘file1′, ‘file2′ 以及 ‘dir1′的档案文件####<br><code>tar -tf archive.tar</code> ####显示一个包中的内容####<br><code>tar -xvf archive.tar</code> ####释放一个包####<br><code>tar -xvf archive.tar -C /tmp</code> ####将压缩包释放到 /tmp目录下####<br><code>tar -cvfj archive.tar.bz2 dir1</code> ####创建一个bzip2格式的压缩包####<br><code>tar -xvfj archive.tar.bz2</code> ####解压一个bzip2格式的压缩包####<br><code>tar -cvfz archive.tar.gz dir1</code> ####创建一个gzip格式的压缩包####<br><code>tar -xvfz archive.tar.gz</code> ####解压一个gzip格式的压缩包####<br><code>zip file1.zip file1</code> ####创建一个zip格式的压缩包####<br><code>zip -r file1.zip file1 file2 dir1</code> ####将几个文件和目录同时压缩成一个zip格式的压缩包####<br><code>unzip file1.zip</code> ####解压一个zip格式压缩包####</p><p>感觉文件和压缩命令在备份网站的时候很有用的，用习惯了 Windows 下的图形界面压缩软件，突然在命令行下真的是很不习惯的，特别是备份解压缩的时候总是解压缩到错误的目录里，所以呀，掌握这些指令真的很重要。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="CentOS" scheme="https://iphper.cn/tags/CentOS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS与Ubuntu有什么不同？</title>
+    <link href="https://iphper.cn/2017/12/10/CentOS%E4%B8%8EUbuntu%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F.html"/>
+    <id>https://iphper.cn/2017/12/10/CentOS与Ubuntu有什么不同？.html</id>
+    <published>2017-12-10T04:45:31.000Z</published>
+    <updated>2018-06-11T11:51:18.557Z</updated>
+    
+    <content type="html"><![CDATA[<p>Linux 中的可选项似乎“无穷无尽”，因为每个人都可以通过修改一个已经发行的版本或者新的白手起家的版本 (LFS) 来构建 Linux。</p><a id="more"></a><p>关于 Linux 发行版的选择，我们关注的因素包括用户界面、文件系统、软件包分发、新的特性以及更新周期和可维护性等。</p><p>在这篇文章中，我们会讲到两个较为熟知的 Linux 发行版，实际上，更多的是介绍两者之间的不同，以及在哪些方面一方比另一方更好。</p><h3 id="什么是-CentOS？"><a href="#什么是-CentOS？" class="headerlink" title="什么是 CentOS？"></a>什么是 CentOS？</h3><p>CentOS（Community Enterprise Operating System）是脱胎于 Red Hat Enterprise Linux (RHEL) 并与之兼容的由社区支持的克隆版 Linux 发行版，所以我们可以认为 CentOS 是 RHEL 的一个免费版。CentOS 的每一套发行版都有 10 年的维护期，每个新版本的释出周期为 2 年。在 2014 年 1 月 8 日，CentOS 声明正式加入红帽，为新的 CentOS 董事会所管理，但仍然保持与 RHEL 的独立性。</p><h4 id="CentOS-的历史和第一次释出"><a href="#CentOS-的历史和第一次释出" class="headerlink" title="CentOS 的历史和第一次释出"></a>CentOS 的历史和第一次释出</h4><p>CentOS 第一次释出是在 2004 年，当时名叫 cAOs Linux；它是由社区维护和管理的一套基于 RPM 的发行版。</p><p>CentOS 结合了包括 Debian、Red Hat Linux/Fedora 和 FreeBSD 等在内的许多方面，使其能够令服务器和集群稳定工作 3 到 5 年的时间。它有一群开源软件开发者作为拥趸，是一个大型组织（CAOS 基金会）的一部分。</p><p>在 2006 年 6 月，David Parsley 宣布由他开发的 TAO Linux（另一个 RHEL 克隆版本）退出历史舞台并全力转入 CentOS 的开发工作。不过，他的领域转移并不会影响之前的 TAO 用户， 因为他们可以通过使用 yum update 来更新系统以迁移到 CentOS。</p><p>2014 年 1 月，红帽开始赞助 CentOS 项目，并移交了所有权和商标。</p><h4 id="CentOS-设计"><a href="#CentOS-设计" class="headerlink" title="CentOS 设计"></a>CentOS 设计</h4><p>确切地说，CentOS 是付费 RHEL (Red Had Enterprise Edition) 版本的克隆。RHEL 提供源码以供之后 CentOS 修改和变更（移除商标和 logo）并完善为最终的成品。</p><h3 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h3><p>Ubuntu 是一个基于 Debian 的 Linux 操作系统，应用于桌面、服务器、智能手机和平板电脑等多个领域。Ubuntu 是由一个英国的名为 Canonical Ltd. 的公司发行的，由南非的 Mark Shuttleworth 创立并赞助。</p><p>扩展阅读：安装完 Ubuntu 16.10 必须做的 10 件事</p><h4 id="Ubuntu-的设计"><a href="#Ubuntu-的设计" class="headerlink" title="Ubuntu 的设计"></a>Ubuntu 的设计</h4><p>Ubuntu 是一个在全世界的开发者共同努力下生成的开源发行版。在这些年的悉心经营下，Ubuntu 的界面变得越来越现代化和人性化，整个系统运行也更加流畅、安全，并且有成千上万的应用可供下载。</p><p>由于它是基于 Debian 的，因此它也支持 .deb 包、较新的包系统和更为安全的 snap 包格式 (snappy)。</p><p>这种新的打包系统允许分发的应用自带满足所需的依赖性。</p><h3 id="CentOS-与-Ubuntu-的区别"><a href="#CentOS-与-Ubuntu-的区别" class="headerlink" title="CentOS 与 Ubuntu 的区别"></a>CentOS 与 Ubuntu 的区别</h3><ul><li>Ubuntu 基于 Debian，CentOS 基于 RHEL；</li><li>Ubuntu 使用 .deb 和 .snap 的软件包，CentOS 使用 .rpm 和 flatpak 软件包；</li><li>Ubuntu 使用 apt 来更新，CentOS 使用 yum；</li><li>CentOS 看起来会更稳定，因为它不会像 Ubuntu 那样对包做常规性更新，但这并不意味着 Ubuntu 就不比 CentOS 安全；</li><li>Ubuntu 有更多的文档和免费的问题、信息支持；</li><li>Ubuntu 服务器版本在云服务和容器部署上的支持更多。</li></ul><h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><p>不论你的选择如何，是 Ubuntu 还是 CentOS，两者都是非常优秀稳定的发行版。如果你想要一个发布周期更短的版本，那么就选 Ubuntu；如果你想要一个不经常变更包的版本，那么就选 CentOS。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Linux 中的可选项似乎“无穷无尽”，因为每个人都可以通过修改一个已经发行的版本或者新的白手起家的版本 (LFS) 来构建 Linux。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="CentOS" scheme="https://iphper.cn/tags/CentOS/"/>
+    
+      <category term="Ubuntu" scheme="https://iphper.cn/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux下载指令wget命令详解</title>
+    <link href="https://iphper.cn/2017/12/06/Linux%E4%B8%8B%E8%BD%BD%E6%8C%87%E4%BB%A4wget%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3.html"/>
+    <id>https://iphper.cn/2017/12/06/Linux下载指令wget命令详解.html</id>
+    <published>2017-12-06T04:17:18.000Z</published>
+    <updated>2017-12-10T09:25:26.363Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/uploads/wget.jpg" alt="Linux下载指令wget命令详解"><br>wget命令用来从指定的URL下载文件。wget非常稳定，它在带宽很窄的情况下和不稳定网络中有很强的适应性，如果是由于网络的原因下载失败，wget会不断的尝试，直到整个文件下载完毕。如果是服务器打断下载过程，它会再次联到服务器上从停止的地方继续下载。这对从那些限定了链接时间的服务器上下载大文件非常有用。<br><a id="more"></a></p><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>wget(选项)(参数)</code></p><h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><p><code>-a&lt;日志文件&gt;</code>：在指定的日志文件中记录资料的执行过程；<br><code>-A&lt;后缀名&gt;</code>：指定要下载文件的后缀名，多个后缀名之间使用逗号进行分隔；<br><code>-b</code>：进行后台的方式运行wget；<br><code>-B&lt;连接地址&gt;</code>：设置参考的连接地址的基地地址；<br><code>-c</code>：继续执行上次终端的任务；<br><code>-C&lt;标志&gt;</code>：设置服务器数据块功能标志on为激活，off为关闭，默认值为on；<br><code>-d</code>：调试模式运行指令；<br><code>-D&lt;域名列表&gt;</code>：设置顺着的域名列表，域名之间用“，”分隔；<br><code>-e&lt;指令&gt;</code>：作为文件“.wgetrc”中的一部分执行指定的指令；<br><code>-h</code>：显示指令帮助信息；<br><code>-i&lt;文件&gt;</code>：从指定文件获取要下载的URL地址；<br><code>-l&lt;目录列表&gt;</code>：设置顺着的目录列表，多个目录用“，”分隔；<br><code>-L</code>：仅顺着关联的连接；<br><code>-r</code>：递归下载方式；<br><code>-nc</code>：文件存在时，下载文件不覆盖原有文件；<br><code>-nv</code>：下载时只显示更新和出错信息，不显示指令的详细执行过程；<br><code>-q</code>：不显示指令执行过程；<br><code>-nh</code>：不查询主机名称；<br><code>-v</code>：显示详细执行过程；<br><code>-V</code>：显示版本信息；<br><code>--passive-ftp</code>：使用被动模式PASV连接FTP服务器；<br><code>--follow-ftp</code>：从HTML文件中下载FTP连接文件。</p><h2 id="参数："><a href="#参数：" class="headerlink" title="参数："></a>参数：</h2><p>URL：下载指定的URL地址。</p><h2 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h2><h3 id="使用wget下载单个文件"><a href="#使用wget下载单个文件" class="headerlink" title="使用wget下载单个文件"></a>使用wget下载单个文件</h3><p><code>wget http://www.tiejiang.org/testfile.zip</code><br>以下的例子是从网络下载一个文件并保存在当前目录，在下载的过程中会显示进度条，包含（下载完成百分比，已经下载的字节，当前下载速度，剩余下载时间）。</p><h3 id="下载并以不同的文件名保存"><a href="#下载并以不同的文件名保存" class="headerlink" title="下载并以不同的文件名保存"></a>下载并以不同的文件名保存</h3><p><code>wget -O wordpress.zip http://www.tiejiang.org/download.aspx?id=1080</code><br>wget默认会以最后一个符合/的后面的字符来命令，对于动态链接的下载通常文件名会不正确。</p><p>错误：下面的例子会下载一个文件并以名称download.aspx?id=1080保存:</p><p><code>wget http://www.linuxde.net/download?id=1</code><br>即使下载的文件是zip格式，它仍然以download.php?id=1080命令。</p><p>正确：为了解决这个问题，我们可以使用参数-O来指定一个文件名：</p><p><code>wget -O wordpress.zip http://www.linuxde.net/download.aspx?id=1080</code></p><h3 id="Wget限速下载"><a href="#Wget限速下载" class="headerlink" title="Wget限速下载"></a>Wget限速下载</h3><p><code>wget --limit-rate=300k http://www.linuxde.net/testfile.zip</code><br>当你执行wget的时候，它默认会占用全部可能的宽带下载。但是当你准备下载一个大文件，而你还需要下载其它文件时就有必要限速了。</p><h3 id="使用Wget断点续传"><a href="#使用Wget断点续传" class="headerlink" title="使用Wget断点续传"></a>使用Wget断点续传</h3><p>wget -c <a href="http://www.linuxde.net/testfile.zip" target="_blank" rel="noopener">http://www.linuxde.net/testfile.zip</a><br>使用wget -c重新启动下载中断的文件，对于我们下载大文件时突然由于网络等原因中断非常有帮助，我们可以继续接着下载而不是重新下载一个文件。需要继续中断的下载时可以使用-c参数。</p><h3 id="使用Wget后台下载"><a href="#使用Wget后台下载" class="headerlink" title="使用Wget后台下载"></a>使用Wget后台下载</h3><pre><code>wget -b http://www.linuxde.net/testfile.zipContinuing in background, pid 1840.Output will be written to `wget-log&#39;.</code></pre><p>对于下载非常大的文件的时候，我们可以使用参数-b进行后台下载，你可以使用以下命令来察看下载进度：</p><p><code>tail -f wget-log</code></p><h3 id="伪装代理名称下载"><a href="#伪装代理名称下载" class="headerlink" title="伪装代理名称下载"></a>伪装代理名称下载</h3><pre><code>wget --user-agent=&quot;Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.16 (KHTML, like Gecko)Chrome/10.0.648.204 Safari/534.16&quot; http://www.linuxde.net/testfile.zip</code></pre><p>有些网站能通过根据判断代理名称不是浏览器而拒绝你的下载请求。不过你可以通过–user-agent参数伪装。</p><h3 id="测试下载链接"><a href="#测试下载链接" class="headerlink" title="测试下载链接"></a>测试下载链接</h3><p>当你打算进行定时下载，你应该在预定时间测试下载链接是否有效。我们可以增加–spider参数进行检查。</p><p><code>wget --spider URL</code><br>如果下载链接正确，将会显示:</p><pre><code>Spider mode enabled. Check if remote file exists.HTTP request sent, awaiting response... 200 OKLength: unspecifiedRemote file exists and could contain further links,but recursion is disabled -- not retrieving.</code></pre><p>这保证了下载能在预定的时间进行，但当你给错了一个链接，将会显示如下错误:</p><pre><code>wget --spider urlSpider mode enabled. Check if remote file exists.HTTP request sent, awaiting response... 404 Not FoundRemote file does not exist -- broken link!!!</code></pre><p>你可以在以下几种情况下使用–spider参数：</p><ul><li>定时下载之前进行检查</li><li>间隔检测网站是否可用</li><li>检查网站页面的死链接</li><li>增加重试次数</li></ul><p><code>wget --tries=40 URL</code><br>如果网络有问题或下载一个大文件也有可能失败。wget默认重试20次连接下载文件。如果需要，你可以使用–tries增加重试次数。</p><h3 id="下载多个文件"><a href="#下载多个文件" class="headerlink" title="下载多个文件"></a>下载多个文件</h3><p><code>wget -i filelist.txt</code><br>首先，保存一份下载链接文件：</p><pre><code>cat &gt; filelist.txturl1url2url3url4</code></pre><p>接着使用这个文件和参数-i下载。</p><h3 id="镜像网站"><a href="#镜像网站" class="headerlink" title="镜像网站"></a>镜像网站</h3><p>下载整个网站到本地。</p><p><code>--miror</code>开户镜像下载。<br><code>-p</code>下载所有为了html页面显示正常的文件。<br><code>--convert-links</code>下载后，转换成本地的链接。<br><code>-P ./LOCAL</code>保存所有文件和目录到本地指定目录。</p><h3 id="过滤指定格式下载"><a href="#过滤指定格式下载" class="headerlink" title="过滤指定格式下载"></a>过滤指定格式下载</h3><p><code>wget --reject=gif ur</code><br>下载一个网站，但你不希望下载图片，可以使用这条命令。</p><h3 id="把下载信息存入日志文件"><a href="#把下载信息存入日志文件" class="headerlink" title="把下载信息存入日志文件"></a>把下载信息存入日志文件</h3><p><code>wget -o download.log URL</code><br>不希望下载信息直接显示在终端而是在一个日志文件，可以使用。</p><h3 id="限制总下载文件大小"><a href="#限制总下载文件大小" class="headerlink" title="限制总下载文件大小"></a>限制总下载文件大小</h3><p><code>wget -Q5m -i filelist.txt</code><br>当你想要下载的文件超过5M而退出下载，你可以使用。注意：这个参数对单个文件下载不起作用，只能递归下载时才有效。</p><h3 id="下载指定格式文件"><a href="#下载指定格式文件" class="headerlink" title="下载指定格式文件"></a>下载指定格式文件</h3><p><code>wget -r -A.pdf url</code><br>可以在以下情况使用该功能：</p><ul><li>下载一个网站的所有图片。</li><li>下载一个网站的所有视频。</li><li>下载一个网站的所有PDF文件。</li><li>FTP下载</li></ul><p><code>wget ftp-url</code><br><code>wget --ftp-user=USERNAME --ftp-password=PASSWORD url</code><br>可以使用wget来完成ftp链接的下载。</p><h3 id="使用wget匿名ftp下载："><a href="#使用wget匿名ftp下载：" class="headerlink" title="使用wget匿名ftp下载："></a>使用wget匿名ftp下载：</h3><p><code>wget ftp-url</code><br>使用wget用户名和密码认证的ftp下载：</p><p><code>wget --ftp-user=USERNAME --ftp-password=PASSWORD url</code></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/uploads/wget.jpg&quot; alt=&quot;Linux下载指令wget命令详解&quot;&gt;&lt;br&gt;wget命令用来从指定的URL下载文件。wget非常稳定，它在带宽很窄的情况下和不稳定网络中有很强的适应性，如果是由于网络的原因下载失败，wget会不断的尝试，直到整个文件下载完毕。如果是服务器打断下载过程，它会再次联到服务器上从停止的地方继续下载。这对从那些限定了链接时间的服务器上下载大文件非常有用。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://iphper.cn/tags/Linux/"/>
+    
+      <category term="wget" scheme="https://iphper.cn/tags/wget/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux控制台下 screen 命令使用学习笔记</title>
+    <link href="https://iphper.cn/2017/12/03/Linux%E6%8E%A7%E5%88%B6%E5%8F%B0%E4%B8%8B-screen-%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.html"/>
+    <id>https://iphper.cn/2017/12/03/Linux控制台下-screen-命令使用学习笔记.html</id>
+    <published>2017-12-03T04:27:37.000Z</published>
+    <updated>2017-12-09T00:41:37.932Z</updated>
+    
+    <content type="html"><![CDATA[<p>screen 是一个非常有用的命令，提供从单个 SSH 会话中使用多个 shell 窗口（会话）的能力。当会话被分离或网络中断时，screen 会话中启动的进程仍将运行，你可以随时重新连接到 screen 会话。如果你想运行一个持久的进程或者从多个位置连接到 shell 会话，这也很方便。<br><a id="more"></a></p><h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><p>系统管理员经常需要SSH 或者telent 远程登录到Linux 服务器，经常运行一些需要很长时间才能完成的任务，比如系统备份、ftp 传输等等。通常情况下我们都是为每一个这样的任务开一个远程终端窗口，因为它们执行的时间太长了。必须等待它们执行完毕，在此期间不能关掉窗口或者断开连接，否则这个任务就会被杀掉，一切半途而废了。</p><h2 id="二、简介"><a href="#二、简介" class="headerlink" title="二、简介"></a>二、简介</h2><p>GNU Screen是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。</p><p>GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。</p><h3 id="会话恢复"><a href="#会话恢复" class="headerlink" title="会话恢复"></a>会话恢复</h3><p>只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行screen -r就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令detach，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。</p><h3 id="多窗口"><a href="#多窗口" class="headerlink" title="多窗口"></a>多窗口</h3><p>在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。</p><h3 id="会话共享"><a href="#会话共享" class="headerlink" title="会话共享"></a>会话共享</h3><p>Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。</p><h2 id="三、语法"><a href="#三、语法" class="headerlink" title="三、语法"></a>三、语法</h2><p><code>screen -AmRvx -ls -wipe-h &lt;行数&gt;-s</code></p><h3 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h3><table><thead><tr><th style="text-align:center">参数</th><th style="text-align:center">中文说明</th></tr></thead><tbody><tr><td style="text-align:center">-A</td><td style="text-align:center">将所有的视窗都调整为目前终端机的大小。</td></tr><tr><td style="text-align:center">-d &lt;作业名称&gt; 　</td><td style="text-align:center">将指定的screen作业离线。</td></tr><tr><td style="text-align:center">-h&lt;行数&gt; 　</td><td style="text-align:center">指定视窗的缓冲区行数。</td></tr><tr><td style="text-align:center">-m</td><td style="text-align:center">即使目前已在作业中的screen作业，仍强制建立新的screen作业。</td></tr><tr><td style="text-align:center">-r &lt;作业名称&gt; 　</td><td style="text-align:center">恢复离线的screen作业。</td></tr><tr><td style="text-align:center">-R 　</td><td style="text-align:center">先试图恢复离线的作业。若找不到离线的作业，即建立新的screen作业。</td></tr><tr><td style="text-align:center">-s 　</td><td style="text-align:center">指定建立新视窗时，所要执行的shell。</td></tr><tr><td style="text-align:center">-S &lt;作业名称&gt; 　</td><td style="text-align:center">指定screen作业的名称。</td></tr><tr><td style="text-align:center">-v 　</td><td style="text-align:center">显示版本信息。</td></tr><tr><td style="text-align:center">-x 　</td><td style="text-align:center">恢复之前离线的screen作业。</td></tr><tr><td style="text-align:center">-ls或–list 　</td><td style="text-align:center">显示目前所有的screen作业。</td></tr><tr><td style="text-align:center">-wipe 　</td><td style="text-align:center">检查目前所有的screen作业，并删除已经无法使用的screen作业。</td></tr></tbody></table><h2 id="四、常用screen参数"><a href="#四、常用screen参数" class="headerlink" title="四、常用screen参数"></a>四、常用screen参数</h2><p><code>screen -S yourname</code> -&gt; 新建一个叫yourname的session<br><code>screen -ls</code> -&gt; 列出当前所有的session<br><code>screen -r yourname</code> -&gt; 回到yourname这个session<br><code>screen -d yourname</code> -&gt; 远程detach某个session<br><code>screen -d -r yourname</code> -&gt; 结束当前session并回到yourname这个session</p><h4 id="在每个screen-session-下，所有命令都以-ctrl-a-C-a-开始。"><a href="#在每个screen-session-下，所有命令都以-ctrl-a-C-a-开始。" class="headerlink" title="在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始。"></a>在每个screen session 下，所有命令都以 ctrl+a(C-a) 开始。</h4><table><thead><tr><th style="text-align:center">Ctrl+a ?</th><th style="text-align:center">显示所有键绑定信息</th></tr></thead><tbody><tr><td style="text-align:center">Ctrl+a w</td><td style="text-align:center">显示所有窗口列表</td></tr><tr><td style="text-align:center">Ctrl+a Ctrl+a</td><td style="text-align:center">切换到之前显示的窗口</td></tr><tr><td style="text-align:center">Ctrl+a c</td><td style="text-align:center">创建一个新的运行shell的窗口并切换到该窗口</td></tr><tr><td style="text-align:center">Ctrl+a n</td><td style="text-align:center">切换到下一个窗口</td></tr><tr><td style="text-align:center">Ctrl+a p</td><td style="text-align:center">切换到前一个窗口(与Ctrl+a n相对)</td></tr><tr><td style="text-align:center">Ctrl+a 0..9</td><td style="text-align:center">切换到窗口0..9</td></tr><tr><td style="text-align:center">Ctrl+a a</td><td style="text-align:center">发送 Ctrl+a到当前窗口</td></tr><tr><td style="text-align:center">Ctrl+a d</td><td style="text-align:center">暂时断开screen会话</td></tr><tr><td style="text-align:center">Ctrl+a k</td><td style="text-align:center">杀掉当前窗口</td></tr><tr><td style="text-align:center">Ctrl+a [</td><td style="text-align:center">进入拷贝/回滚模式</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;screen 是一个非常有用的命令，提供从单个 SSH 会话中使用多个 shell 窗口（会话）的能力。当会话被分离或网络中断时，screen 会话中启动的进程仍将运行，你可以随时重新连接到 screen 会话。如果你想运行一个持久的进程或者从多个位置连接到 shell 会话，这也很方便。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="screen" scheme="https://iphper.cn/tags/screen/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx防止DDOS攻击配置</title>
+    <link href="https://iphper.cn/2017/12/02/Nginx%E9%98%B2%E6%AD%A2DDOS%E6%94%BB%E5%87%BB%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://iphper.cn/2017/12/02/Nginx防止DDOS攻击配置.html</id>
+    <published>2017-12-02T02:46:37.000Z</published>
+    <updated>2017-12-09T00:41:43.558Z</updated>
+    
+    <content type="html"><![CDATA[<p>防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是<code>Nginx</code>，主要使用<code>nginx</code>的<code>http_limit_conn</code>和<code>http_limit_req</code>模块来防御。 <code>ngx_http_limit_conn_module</code> 可以限制单个IP的连接数，<code>ngx_http_limit_req_module</code>可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。<br><a id="more"></a><br>下面是配置方法：</p><h2 id="一-限制每秒请求数"><a href="#一-限制每秒请求数" class="headerlink" title="一. 限制每秒请求数"></a>一. 限制每秒请求数</h2><p><code>ngx_http_limit_req_module</code>模块通过漏桶原理来限制单位时间内的请求数，一旦单位时间内请求数超过限制，就会返回503错误。配置需要在两个地方设置：</p><p><code>nginx.conf</code>的http段内定义触发条件，可以有多个条件<br>在<code>location</code>内定义达到触发条件时<code>nginx</code>所要执行的动作<br>例如：</p><pre><code>http {     limit_req_zone $binary_remote_addr zone=one:10m rate=10r/s; //触发条件，所有访问ip 限制每秒10个请求     ...     server {         ...         location  ~ \.php$ {             limit_req zone=one burst=5 nodelay;   //执行的动作,通过zone名字对应                }            }      } </code></pre><h3 id="参数说明："><a href="#参数说明：" class="headerlink" title="参数说明："></a>参数说明：</h3><p><code>$binary_remote_addr</code> 二进制远程地址<br><code>zone=one:10m</code> 定义zone名字叫one，并为这个zone分配10M内存，用来存储会话（二进制远程地址），1m内存可以保存16000会话<br><code>rate=10r/s;</code> 限制频率为每秒10个请求<br><code>burst=5</code> 允许超过频率限制的请求数不多于5个，假设1、2、3、4秒请求为每秒9个，那么第5秒内请求15个是允许的，反之，如果第一秒内请求15个，会将5个请求放到第二秒，第二秒内超过10的请求直接503，类似多秒内平均速率限制。<br><code>nodelay</code> 超过的请求不被延迟处理，设置后15个请求在1秒内处理。</p><h2 id="二-限制IP连接数"><a href="#二-限制IP连接数" class="headerlink" title="二.限制IP连接数"></a>二.限制IP连接数</h2><p><code>ngx_http_limit_conn_module</code>的配置方法和参数与<code>http_limit_req</code>模块很像，参数少，要简单很多</p><pre><code>http {     limit_conn_zone $binary_remote_addr zone=addr:10m; //触发条件     ...     server {         ...         location /download/ {             limit_conn addr 1;    // 限制同一时间内1个连接，超出的连接返回503                 }            }      }   </code></pre><h2 id="三-白名单设置"><a href="#三-白名单设置" class="headerlink" title="三.白名单设置"></a>三.白名单设置</h2><p><code>http_limit_conn</code> 和<code>http_limit_req</code>模块限制了单ip单位时间内的并发和请求数，但是如果<code>Nginx</code>前面有lvs或者haproxy之类的负载均衡或者反向代 理，<code>nginx</code>获取的都是来自负载均衡的连接或请求，这时不应该限制负载均衡的连接和请求，就需要geo和map模块设置白名单：</p><pre><code>geo $whiteiplist { default 1; 10.11.15.161 0; } map $whiteiplist $limit { 1 $binary_remote_addr; 0 &quot;&quot;; } limit_req_zone $limit zone=one:10m rate=10r/s;limit_conn_zone $limit zone=addr:10m;</code></pre><p>geo模块定义了一个默认值是1的变量<code>whiteiplist</code>，当在ip在白名单中，变量<code>whiteiplist</code>的值为0，反之为1<br>如果在白名单中–&gt; whiteiplist=0 –&gt; $limit=”” –&gt; 不会存储到10m的会话状态（one或者addr）中 –&gt; 不受限制<br>反之，不在白名单中 –&gt; whiteiplist=1 –&gt; $limit=二进制远程地址 –&gt;存储进10m的会话状态中 –&gt; 受到限制</p><h2 id="四-测试"><a href="#四-测试" class="headerlink" title="四.测试"></a>四.测试</h2><p>使用ab命令来模拟CC攻击，<code>http_limit_conn</code>和<code>http_limit_req</code>模块要分开测试，同时注意<code>http_limit_conn</code>模块只统计正在被处理的请求（这些请求的头信息已被完全读入）所 在的连接。如果请求已经处理完，连接没有被关闭时，是不会被统计的。这时用<code>netstat</code>看到连接数可以超过限定的数量，不会被阻止。<br><code>ab -n 请求数 -c 并发 http://10.11.15.174/i.php</code></p><p>如果被阻止前台会返回503，同时在nginx的error_log中会看到如下错误日志：</p><h3 id="被限制连接数："><a href="#被限制连接数：" class="headerlink" title="被限制连接数："></a>被限制连接数：</h3><p><code>2015/01/28 14:20:26 [error] 4107#0: *65525 limiting connections by zone &quot;addr&quot;, client: 10.11.15.161, server: , request: &quot;GET /i.php?=PHPE9568F35-D428-11d2-A769-00AA001ACF42 HTTP/1.1&quot;, host: &quot;10.11.15.174&quot;, referrer: &quot;http://10.11.15.174/i.php&quot;</code></p><h3 id="被限制请求数："><a href="#被限制请求数：" class="headerlink" title="被限制请求数："></a>被限制请求数：</h3><p><code>2015/01/28 14:18:59 [error] 4095#0: *65240 limiting requests, excess: 5.772 by zone &quot;one&quot;, client: 10.11.15.161, server: , request: &quot;GET /i.php?=PHPE9568F34-D428-11d2-A769-00AA001ACF42 HTTP/1.1&quot;, host: &quot;10.11.15.174&quot;, referrer: &quot;http://10.11.15.174/i.php&quot;</code></p><h2 id="五-其它一些防CC的方法"><a href="#五-其它一些防CC的方法" class="headerlink" title="五.其它一些防CC的方法"></a>五.其它一些防CC的方法</h2><h3 id="1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf"><a href="#1-Nginx模块-ModSecurity、http-guard、ngx-lua-waf" class="headerlink" title="1.Nginx模块 ModSecurity、http_guard、ngx_lua_waf"></a>1.<code>Nginx</code>模块 <code>ModSecurity</code>、<code>http_guard</code>、<code>ngx_lua_waf</code></h3><ul><li><code>ModSecurity</code> 应用层WAF，功能强大，能防御的攻击多，配置复杂</li><li><code>ngx_lua_waf</code> 基于<code>ngx_lua</code>的<code>web</code>应用防火墙，使用简单，高性能和轻量级</li><li><p><code>http_guard</code> 基于<code>openresty</code></p><h3 id="2-软件-Iptables"><a href="#2-软件-Iptables" class="headerlink" title="2.软件+Iptables"></a>2.软件+Iptables</h3></li><li><p><code>fail2ban</code> 通过分析日志来判断是否使用iptables拦截</p></li><li><code>DDoS Deflate</code> 通过<code>netstat</code>判断ip连接数，并使用<code>iptables</code>屏蔽</li></ul><p>开头说过抗DDOS是一个系统工程，通过优化系统和软件配置，只能防御小规模的CC攻击，对于大规模攻击、四层流量攻击、混合攻击来说，基本上系统和应用软件没挂，带宽就打满了。下面是我使用过的防御DDOS的方式：</p><ul><li>高防服务器和带流量清洗的ISP<br>通常是美韩的服务器，部分ISP骨干供应商有流量清洗服务，例如香港的PCCW。通常可以防御10G左右的小型攻击</li><li>流量清洗服务 例如：akamai(prolexic),nexusguard </li><li>CDN 例如：蓝讯 网宿 cloudflare<br>等，CDN针对DDOS的分布式特点，将流量引流分散，同时对网站又有加速作用，效果好，成本相对低。</li></ul><p>总结一下：发动攻击易，防御难。七层好防，四层难防；小型能防，大型烧钱</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;防御DDOS是一个系统工程，攻击花样多，防御的成本高瓶颈多，防御起来即被动又无奈。DDOS的 特点是分布式，针对带宽和服务攻击，也就是四层流量攻击和七层应用攻击，相应的防御瓶颈四层在带宽，七层的多在架构的吞吐量。对于七层的应用攻击，我们还 是可以做一些配置来防御的，例如前端是&lt;code&gt;Nginx&lt;/code&gt;，主要使用&lt;code&gt;nginx&lt;/code&gt;的&lt;code&gt;http_limit_conn&lt;/code&gt;和&lt;code&gt;http_limit_req&lt;/code&gt;模块来防御。 &lt;code&gt;ngx_http_limit_conn_module&lt;/code&gt; 可以限制单个IP的连接数，&lt;code&gt;ngx_http_limit_req_module&lt;/code&gt;可以限制单个IP每秒请求数，通过限制连接数和请求数能相对有效的防御CC攻击。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Nginx" scheme="https://iphper.cn/categories/Nginx/"/>
+    
+    
+      <category term="DDOS" scheme="https://iphper.cn/tags/DDOS/"/>
+    
+      <category term="Nginx" scheme="https://iphper.cn/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让VIM支持Nginx.conf文件语法高亮显示</title>
+    <link href="https://iphper.cn/2017/11/30/%E8%AE%A9VIM%E6%94%AF%E6%8C%81Nginx-conf%E6%96%87%E4%BB%B6%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E6%98%BE%E7%A4%BA.html"/>
+    <id>https://iphper.cn/2017/11/30/让VIM支持Nginx-conf文件语法高亮显示.html</id>
+    <published>2017-11-30T04:35:58.000Z</published>
+    <updated>2017-12-09T00:41:20.336Z</updated>
+    
+    <content type="html"><![CDATA[<p>我们在编辑配置 Nginx 的配置文件（.conf）时，由于他没有高亮的功能，但是 Nginx 官方是支持这个功能的；要想在编辑配置 Nginx 配置文件（.conf）的时候高亮语法以降低配置的错误发生率，我们只需要使用 Nginx 官方的语法高亮文件就可以了。<br><a id="more"></a></p><h2 id="手动修改"><a href="#手动修改" class="headerlink" title="手动修改"></a>手动修改</h2><p>下载Nginx配置文件的语法文件:nginx.vim</p><p><code>wget http://www.vim.org/scripts/download_script.php?src_id=14376 -O nginx.vim</code></p><p>将文件复制到 <code>/usr/share/vim/vim74/syntax</code> 目录（也可以是 单用户目录 <code>~/.vim/syntax/</code>）。</p><p>修改 <code>vim /usr/share/vim/vim74/filetype.vim</code> 增加</p><p><code>au BufRead,BufNewFile /etc/nginx/*,/usr/local/nginx/conf/* if &amp;ft == &#39;&#39; | setfiletype nginx | endif</code></p><p>注意根据自己安装的nginx目录，修改上面的命令</p><h2 id="自动化脚本"><a href="#自动化脚本" class="headerlink" title="自动化脚本"></a>自动化脚本</h2><pre><code>#!/bin/bashmkdir -p ~/.vim/syntax &amp;&amp; cd ~/.vim/syntaxwget http://www.vim.org/scripts/download_script.php?src_id=14376 -O nginx.vim &gt;/dev/nullecho &quot;au BufRead,BufNewFile /usr/local/nginx/conf/* set ft=nginx&quot; &gt; ~/.vim/filetype.vim</code></pre><h2 id="其中路径-usr-local-nginx-conf-为你的nginx-conf文件路径"><a href="#其中路径-usr-local-nginx-conf-为你的nginx-conf文件路径" class="headerlink" title="其中路径/usr/local/nginx/conf/*为你的nginx.conf文件路径"></a>其中路径<code>/usr/local/nginx/conf/*</code>为你的nginx.conf文件路径</h2><p>将上述代码保存为.sh文件后在bash里运行即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我们在编辑配置 Nginx 的配置文件（.conf）时，由于他没有高亮的功能，但是 Nginx 官方是支持这个功能的；要想在编辑配置 Nginx 配置文件（.conf）的时候高亮语法以降低配置的错误发生率，我们只需要使用 Nginx 官方的语法高亮文件就可以了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Nginx" scheme="https://iphper.cn/categories/Nginx/"/>
+    
+    
+      <category term="VIM" scheme="https://iphper.cn/tags/VIM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS最常用命令整理</title>
+    <link href="https://iphper.cn/2017/11/29/CentOS%E6%9C%80%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86.html"/>
+    <id>https://iphper.cn/2017/11/29/CentOS最常用命令整理.html</id>
+    <published>2017-11-29T05:04:41.000Z</published>
+    <updated>2018-06-11T11:50:37.023Z</updated>
+    
+    <content type="html"><![CDATA[<p>作为一个使用 CentOS 作为服务器操作系统的博客站长，一定要熟悉了解 CentOS 下的常用命令，这可以有效的提升服务器运维的效率，我认为这些命令其实不用了解其原理和所有参数的意义，只要你能知道它可以做什么就可以了，至于更多的了解可以在以后慢慢积累，其实就是只要求“广度”不要求“深度”。<br><a id="more"></a></p><h3 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录:"></a>文件和目录:</h3><p><code>cd /home</code> 进入 ‘/home’ 目录<br><code>cd ..</code> 返回上一级目录<br><code>cd ../..</code> 返回上两级目录<br><code>cd -</code> 返回上次所在目录<br><code>cp file1 file2</code> 将file1复制为file2<br><code>cp -a dir1 dir2</code> 复制一个目录<br><code>cp -a /tmp/dir1 .</code> 复制一个目录到当前工作目录（.代表当前目录）<br><code>ls</code> 查看目录中的文件<br><code>ls -a</code> 显示隐藏文件<br><code>ls -l</code> 显示详细信息<br><code>ls -lrt</code> 按时间显示文件（l表示详细列表，r表示反向排序，t表示按时间排序）<br><code>pwd</code> 显示工作路径<br><code>mkdir dir1</code> 创建 ‘dir1’ 目录<br><code>mkdir dir1 dir2</code> 同时创建两个目录<br><code>mkdir -p /tmp/dir1/dir2</code> 创建一个目录树<br><code>mv dir1 dir2</code> 移动/重命名一个目录<br><code>rm -f file1</code> 删除 ‘file1’<br><code>rm -rf dir1</code> 删除 ‘dir1’ 目录及其子目录内容</p><h3 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容:"></a>查看文件内容:</h3><p><code>cat file1</code> 从第一个字节开始正向查看文件的内容<br><code>head -2 file1</code> 查看一个文件的前两行<br><code>more file1</code> 查看一个长文件的内容<br><code>tac file1</code> 从最后一行开始反向查看一个文件的内容<br><code>tail -3 file1</code> 查看一个文件的最后三行</p><h3 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理:"></a>文本处理:</h3><p><code>grep str /tmp/test</code> 在文件 ‘/tmp/test’ 中查找 “str”<br><code>grep ^str /tmp/test</code> 在文件 ‘/tmp/test’ 中查找以 “str” 开始的行<br><code>grep [0-9] /tmp/test</code> 查找 ‘/tmp/test’ 文件中所有包含数字的行<br><code>grep str -r /tmp/*</code> 在目录 ‘/tmp’ 及其子目录中查找 “str”<br><code>diff file1 file2</code> 找出两个文件的不同处<br><code>sdiff file1 file2</code> 以对比的方式显示两个文件的不同</p><h3 id="查找"><a href="#查找" class="headerlink" title="查找:"></a>查找:</h3><p><code>1find / -name file11</code> 从 ‘/‘ 开始进入根文件系统查找文件和目录<br><code>find / -user user1</code> 查找属于用户 ‘user1’ 的文件和目录<br><code>find /home/user1 -name \*.bin</code> 在目录 ‘/ home/user1’ 中查找以 ‘.bin’ 结尾的文件<br><code>find /usr/bin -type f -atime +100</code> 查找在过去100天内未被使用过的执行文件<br><code>find /usr/bin -type f -mtime -10</code> 查找在10天内被创建或者修改过的文件<br><code>locate \*.ps</code> 寻找以 ‘.ps’ 结尾的文件，先运行’updatedb’ 命令<br><code>find -name &#39;*.[ch]&#39; | xargs grep -E &#39;expr&#39;</code>在当前目录及其子目录所有.c和.h文件中查找 ‘expr’<br><code>find -type f -print0 | xargs -r0 grep -F &#39;expr&#39;</code>在当前目录及其子目录的常规文件中查找 ‘expr’<br><code>find -maxdepth 1 -type f | xargs grep -F &#39;expr&#39;</code> 在当前目录中查找 ‘expr’</p><h3 id="压缩和解压"><a href="#压缩和解压" class="headerlink" title="压缩和解压:"></a>压缩和解压:</h3><p><code>bzip2 file1</code> 压缩 file1<br><code>bunzip2 file1.bz2</code> 解压 file1.bz2<br><code>gzip file1</code> 压缩 file1<br><code>gzip -9 file1</code> 最大程度压缩 file1<br><code>gunzip file1.gz</code> 解压 file1.gz<br><code>tar -cvf archive.tar file1</code> 把file1打包成 archive.tar<br>（-c: 建立压缩档案；-v: 显示所有过程；-f: 使用档案名字，是必须的，是最后一个参数）<br><code>tar -cvf archive.tar file1 dir1</code> 把 file1，dir1 打包成 archive.tar<br><code>tar -tf archive.tar</code> 显示一个包中的内容<br><code>tar -xvf archive.tar</code> 释放一个包<br><code>tar -xvf archive.tar -C /tmp</code> 把压缩包释放到 /tmp目录下<br><code>zip file1.zip file1</code> 创建一个zip格式的压缩包<br><code>zip -r file1.zip file1 dir1</code> 把文件和目录压缩成一个zip格式的压缩包<br><code>unzip file1.zip</code> 解压一个zip格式的压缩包到当前目录<br><code>unzip test.zip -d /tmp/</code> 解压一个zip格式的压缩包到 /tmp 目录</p><h3 id="yum工具"><a href="#yum工具" class="headerlink" title="yum工具:"></a>yum工具:</h3><p><code>yum -y install [package]</code> 下载并安装一个rpm包<br><code>yum localinstall [package.rpm]</code> 安装一个rpm包，使用你自己的软件仓库解决所有依赖关系<br><code>yum -y update</code> 更新当前系统中安装的所有rpm包<br><code>yum update [package]</code> 更新一个rpm包<br><code>yum remove [package]</code> 删除一个rpm包<br><code>yum list</code> 列出当前系统中安装的所有包<br><code>yum search [package]</code> 在rpm仓库中搜寻软件包<br><code>yum clean [package]</code> 清除缓存目录（/var/cache/yum）下的软件包<br><code>yum clean headers</code> 删除所有头文件<br><code>yum clean all</code> 删除所有缓存的包和头文件</p><h3 id="网络"><a href="#网络" class="headerlink" title="网络:"></a>网络:</h3><p><code>ifconfig eth0</code> 显示一个以太网卡的配置<br><code>ifconfig eth0 192.168.1.1 netmask 255.255.255.0</code> 配置网卡的IP地址<br><code>ifdown eth0</code> 禁用 ‘eth0’ 网络设备<br><code>ifup eth0</code> 启用 ‘eth0’ 网络设备<br><code>iwconfig eth1</code> 显示一个无线网卡的配置<br><code>iwlist scan</code> 显示无线网络<br><code>ip addr show</code> 显示网卡的IP地址</p><h3 id="其他"><a href="#其他" class="headerlink" title="其他:"></a>其他:</h3><p><code>su -</code> 切换到root权限（与su有区别）<br><code>shutdown -h now</code> 关机<br><code>shutdown -r now</code> 重启<br><code>top</code> 罗列使用CPU资源最多的linux任务 （输入q退出）<br><code>pstree</code> 以树状图显示程序<br><code>man ping</code> 查看参考手册（例如ping 命令）<br><code>passwd</code> 修改密码<br><code>df -h</code> 显示磁盘的使用情况<br><code>cal -3</code> 显示前一个月，当前月以及下一个月的月历<br><code>cal 10 1988</code> 显示指定月，年的月历<br><code>date --date &#39;1970-01-01 UTC 1427888888 seconds&#39;</code> 把一相对于1970-01-01 00:00的秒数转换成时间</p><p>上述这些指令基本上都把一些常用到的参数作为范例了，所以还是很不错的一个参考的，特别是对于新手们来说，我自己也会经常来翻看一下的。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为一个使用 CentOS 作为服务器操作系统的博客站长，一定要熟悉了解 CentOS 下的常用命令，这可以有效的提升服务器运维的效率，我认为这些命令其实不用了解其原理和所有参数的意义，只要你能知道它可以做什么就可以了，至于更多的了解可以在以后慢慢积累，其实就是只要求“广度”不要求“深度”。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="https://iphper.cn/tags/Linux/"/>
+    
+      <category term="Centos" scheme="https://iphper.cn/tags/Centos/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一些网页制作中实用的小技巧</title>
+    <link href="https://iphper.cn/2017/11/28/%E4%B8%80%E4%BA%9B%E7%BD%91%E9%A1%B5%E5%88%B6%E4%BD%9C%E4%B8%AD%E5%AE%9E%E7%94%A8%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7.html"/>
+    <id>https://iphper.cn/2017/11/28/一些网页制作中实用的小技巧.html</id>
+    <published>2017-11-28T00:15:44.000Z</published>
+    <updated>2018-06-11T11:45:01.393Z</updated>
+    
+    <content type="html"><![CDATA[<p>无论你是站长还是前端工作人员，掌握一些页面制作技巧可以更高效的完成页面制作，下面就整理一些日常遇到问题的解决技巧。<br><a id="more"></a></p><h2 id="一、box-sizing"><a href="#一、box-sizing" class="headerlink" title="一、box-sizing"></a>一、box-sizing</h2><p><code>box-sizing</code>：允许以特定的方式去定义匹配某个区域的特定元素。</p><p><code>content-box</code>：在规定一个框的宽高之外给这个框加内边距和边框。</p><p><code>border-box</code>：（textarea和select默认值）在规定的一个框的宽高之内给这个框加内边距和边框。</p><pre><code class="css">/*看个人习惯而用，但一般标签默认属性是content-box，除textarea,select*/box-sizing: content-box;-moz-box-sizing: content-box;-webkit-box-sizing: content-box; </code></pre><h2 id="二、美化-input-框"><a href="#二、美化-input-框" class="headerlink" title="二、美化 input 框"></a>二、美化 input 框</h2><pre><code class="css">/*在IE10+浏览器中, 使用css即可隐藏input文本输入框右侧的叉号*/input[type=text]::-ms-clear,::-ms-reveal{display:none;}input::-ms-clear,::-ms-reveal{display:none;}input{/*去除点击出现轮廓颜色*/outline: none;/*padding已在重置样式中去除，如果没有去除，记得有padding哦*/}</code></pre><h2 id="三、美化-textarea-文本域"><a href="#三、美化-textarea-文本域" class="headerlink" title="三、美化 textarea 文本域"></a>三、美化 textarea 文本域</h2><pre><code class="css">textarea{/*别忘了文本域的box-sizing属性值是border-box;所有的边框和padding都是在你固定的宽高的基础上绘制*//*去除点击出现轮廓颜色*/outline: none;/*如果有需要，去掉右下角的可拉伸变大小的图标和功能*/resize: none;/*padding已在重置样式中去除，如果没有去除，记得有padding哦*/}</code></pre><h2 id="四、改变-placeholder-的字体颜色大小"><a href="#四、改变-placeholder-的字体颜色大小" class="headerlink" title="四、改变 placeholder 的字体颜色大小"></a>四、改变 placeholder 的字体颜色大小</h2><pre><code class="css">input::-webkit-input-placeholder {/* WebKit browsers */font-size:14px;color: #333;}input:-moz-placeholder {/* Mozilla Firefox 4 to 18 */font-size:14px;color: #333;}input::-moz-placeholder {/* Mozilla Firefox 19+ */font-size:14px;color: #333;}input:-ms-input-placeholder {/* Internet Explorer 10+ */font-size:14px;color: #333;}</code></pre><h2 id="五、美化-select"><a href="#五、美化-select" class="headerlink" title="五、美化 select"></a>五、美化 select</h2><pre><code class="css">/*清除ie的默认选择框样式清除，隐藏下拉箭头*/select::-ms-expand { display: none; }select {/*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/border: solid 1px #333;/*将默认的select选择框样式清除*/appearance:none;-moz-appearance:none;-webkit-appearance:none;/*在选择框的最右侧中间显示小箭头图片*/background: url(&quot;小箭头图片路径&quot;) no-repeat rightright center transparent;/*为下拉小箭头留出一点位置，避免被文字覆盖*/padding-right: 14px;/*去除点击出现轮廓颜色*/outline: none;}</code></pre><h2 id="六、美化-button-按钮"><a href="#六、美化-button-按钮" class="headerlink" title="六、美化 button 按钮"></a>六、美化 button 按钮</h2><pre><code class="css">button{/*本身有2px的边框，一般的button都不需要边框*/border: none;/*本身有的背景色，可以用其他颜色取代*/background: #333;/*padding已在重置样式中去除，如果没有去除，记得有padding哦*/}</code></pre><h2 id="七、美化单选框、多选框或者是上传文件按钮"><a href="#七、美化单选框、多选框或者是上传文件按钮" class="headerlink" title="七、美化单选框、多选框或者是上传文件按钮"></a>七、美化单选框、多选框或者是上传文件按钮</h2><pre><code class="css">/*因为用input[type=&quot;radio&quot;]和input[type=&quot;cheakbox&quot;]都不能直接改变它们的样式，这个时候要用到label标签关联，然后隐藏input标签，直接给label标签样式就好了。选中label就是选中了此标签*/&lt;label for=&quot;sex&quot;&gt;男&lt;/label&gt;&lt;input type=&quot;radio&quot; id=&quot;sex&quot; value=&quot;男&quot; /&gt;</code></pre><h2 id="八、多出文字用省略号表示"><a href="#八、多出文字用省略号表示" class="headerlink" title="八、多出文字用省略号表示"></a>八、多出文字用省略号表示</h2><pre><code class="css">whitewhite-space: nowrap; /* 强制不换行 */overflow:hidden; / *内容超出宽度时隐藏超出部分的内容 */text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ，需与overflow:hidden;一起使用。*/</code></pre><h2 id="九、css-页面点击文字出现蓝色底色去掉方法"><a href="#九、css-页面点击文字出现蓝色底色去掉方法" class="headerlink" title="九、css 页面点击文字出现蓝色底色去掉方法"></a>九、css 页面点击文字出现蓝色底色去掉方法</h2><pre><code class="css">-moz-user-select: none; /* 火狐 */-webkit-user-select: none; /* webkit浏览器 */-ms-user-select: none; /* IE10 */-khtml-user-select: none; /* 早期浏览器 */user-select: none;</code></pre><h2 id="十、在遇见图标的垂直位置很难调整的时候可以用这个属性"><a href="#十、在遇见图标的垂直位置很难调整的时候可以用这个属性" class="headerlink" title="十、在遇见图标的垂直位置很难调整的时候可以用这个属性"></a>十、在遇见图标的垂直位置很难调整的时候可以用这个属性</h2><pre><code class="css">vertical-align: 30%;vertical-align: middle;</code></pre><h2 id="十一、如何让一个div在页面中上下左右居中"><a href="#十一、如何让一个div在页面中上下左右居中" class="headerlink" title="十一、如何让一个div在页面中上下左右居中"></a>十一、如何让一个div在页面中上下左右居中</h2><pre><code class="css">div{width:400px;height:300px;position:absolute;top:50%;left:50%;margin:-150px 0 0 -200px;}</code></pre><h2 id="十二、js"><a href="#十二、js" class="headerlink" title="十二、js"></a>十二、js</h2><pre><code class="css">// 在js中写的返回键onclick = &#39;history.go(-1)&#39;;// 强制刷新页面window.location.reload(true);</code></pre><h2 id="十三、换行，不换行，字间距"><a href="#十三、换行，不换行，字间距" class="headerlink" title="十三、换行，不换行，字间距"></a>十三、换行，不换行，字间距</h2><img src="/uploads/171128_css.png">]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;无论你是站长还是前端工作人员，掌握一些页面制作技巧可以更高效的完成页面制作，下面就整理一些日常遇到问题的解决技巧。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="https://iphper.cn/categories/CSS/"/>
+    
+    
+      <category term="CSS" scheme="https://iphper.cn/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CentOS下yum指令详解</title>
+    <link href="https://iphper.cn/2017/11/26/CentOS%E4%B8%8Byum%E6%8C%87%E4%BB%A4%E8%AF%A6%E8%A7%A3.html"/>
+    <id>https://iphper.cn/2017/11/26/CentOS下yum指令详解.html</id>
+    <published>2017-11-26T08:25:17.000Z</published>
+    <updated>2017-12-09T00:41:28.618Z</updated>
+    
+    <content type="html"><![CDATA[<p>yum，是Yellow dog Updater Modified 的简称，是杜克大学为了提高RPM 软件包安装性而开发的一种软件包管理器。起初是由yellow dog 这一发行版的开发者Terra Soft 研发，用python 写成，那时还叫做yup(yellow dog updater)，后经杜克大学的Linux@Duke 开发团队进行改进，遂有此名。yum 的宗旨是自动化地升级，安装/移除rpm 包，收集rpm 包的相关信息，检查依赖性并自动提示用户解决。yum 的关键之处是要有可靠的repository，顾名思义，这是软件的仓库，它可以是http 或ftp 站点，也可以是本地软件池，但必须包含rpm 的header，header 包括了rpm 包的各种信息，包括描述，功能，提供的文件，依赖性等。正是收集了这些header 并加以分析，才能自动化地完成余下的任务。<br><a id="more"></a><br>yum 的理念是使用一个中心仓库(repository)管理一部分甚至一个distribution 的应用程序相互关系，根据计算出来的软件依赖关系进行相关的升级、安装、删除等等操作，减少了Linux 用户一直头痛的dependencies 的问题。这一点上，yum 和apt 相同。apt 原为debian 的deb 类型软件管理所使用，但是现在也能用到 <code>RedHat</code> 门下的rpm 了。</p><p>yum 主要功能是更方便的添加/删除/更新RPM 包，自动解决包的倚赖性问题，便于管理大量系统的更新问题。</p><p>yum 可以同时配置多个资源库(Repository)，简洁的配置文件（/etc/yum.conf），自动解决增加或删除rpm 包时遇到的依赖性问题，保持与RPM 数据库的一致性。</p><h2 id="yum-配置"><a href="#yum-配置" class="headerlink" title="yum 配置"></a>yum 配置</h2><p>yum 的配置文件分为两部分：main 和repository<br><code>main</code> 部分定义了全局配置选项，整个yum 配置文件应该只有一个main。常位于<code>/etc/yum.conf</code> 中。<br><code>repository</code>部分定义了每个源/服务器的具体配置，可以有一到多个。常位于<code>/etc/yum.repo.d</code> 目录下的各文件中。<br><code>yum.conf</code>文件一般位于/etc目录下，一般其中只包含main部分的配置选项。<br>除了上述之外，还有一些可以添加的选项，如：<br><code>exclude=selinux*</code>　　// 排除某些软件在升级名单之外，可以用通配符，列表中各个项目要用空格隔开，这个对于安装了诸如美化包，中文补丁的朋友特别有用。<br><code>gpgcheck=1</code>　　// 有1和0两个选择，分别代表是否是否进行gpg(GNU Private Guard) 校验，以确定rpm 包的来源是有效和安全的。这个选项如果设置在[main]部分，则对每个repository 都有效。默认值为0。</p><h2 id="使用国内的-yum源"><a href="#使用国内的-yum源" class="headerlink" title="使用国内的 yum源"></a>使用国内的 yum源</h2><p>国内比较好的yum源主要是阿里云、163以及搜狐的，更新yum的命令如下：</p><h3 id="进入yum源配置目录"><a href="#进入yum源配置目录" class="headerlink" title="进入yum源配置目录"></a>进入yum源配置目录</h3><p><code>cd /etc/yum.repos.d</code></p><h3 id="备份原来的yum源，便于恢复，改啥都得留个备份，万一玩儿了还能恢复"><a href="#备份原来的yum源，便于恢复，改啥都得留个备份，万一玩儿了还能恢复" class="headerlink" title="备份原来的yum源，便于恢复，改啥都得留个备份，万一玩儿了还能恢复"></a>备份原来的yum源，便于恢复，改啥都得留个备份，万一玩儿了还能恢复</h3><p><code>mv CentOS-Base.repo CentOS-Base.repo.bk</code></p><p>下载新的<code>CentOS-Base.repo</code> 到<code>/etc/yum.repos.d/</code></p><h3 id="如下的源用一个就好，三条命令选其一"><a href="#如下的源用一个就好，三条命令选其一" class="headerlink" title="如下的源用一个就好，三条命令选其一"></a>如下的源用一个就好，三条命令选其一</h3><p>//更新为阿里云的源<br><code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-6.repo</code></p><p>//更新为163的源<br><code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.163.com/.help/CentOS6-Base-163.repo</code></p><p>//更新为搜狐的源<br><code>wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.sohu.com/help/CentOS-Base-sohu.repo</code></p><p>运行yum makecache生成缓存</p><p><code>yum clean all</code><br><code>yum makecache</code></p><p>yum提供了查找、安装、删除某一个、一组甚至全部软件包的命令，而且命令简洁而又好记。</p><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><p><code>yum(选项)(参数)</code></p><h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><ul><li>-h：显示帮助信息；</li><li>-y：对所有的提问都回答“yes”；</li><li>-c：指定配置文件；</li><li>-q：安静模式；</li><li>-v：详细模式；</li><li>-d：设置调试等级（0-10）；</li><li>-e：设置错误等级（0-10）；</li><li>-R：设置yum处理一个命令的最大等待时间；</li><li>-C：完全从缓存中运行，而不去下载或者更新任何头文件。</li></ul><h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><ul><li>install：安装rpm软件包；</li><li>update：更新rpm软件包；</li><li>check-update：检查是否有可用的更新rpm软件包；</li><li>remove：删除指定的rpm软件包；</li><li>list：显示软件包的信息；</li><li>search：检查软件包的信息；</li><li>info：显示指定的rpm软件包的描述信息和概要信息；</li><li>clean：清理yum过期的缓存；</li><li>shell：进入yum的shell提示符；</li><li>resolvedep：显示rpm软件包的依赖关系；</li><li>localinstall：安装本地的rpm软件包；</li><li>localupdate：显示本地rpm软件包进行更新；</li><li>deplist：显示rpm软件包的所有依赖关系。</li></ul><h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><h3 id="部分常用的命令包括："><a href="#部分常用的命令包括：" class="headerlink" title="部分常用的命令包括："></a>部分常用的命令包括：</h3><p>自动搜索最快镜像插件：yum install yum-fastestmirror<br>安装yum图形窗口插件：yum install yumex<br>查看可能批量安装的列表：yum grouplist</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><code>yum install</code> #全部安装<br><code>yum install package1</code> #安装指定的安装包package1<br><code>yum groupinsall group1</code> #安装程序组group1</p><h3 id="更新和升级"><a href="#更新和升级" class="headerlink" title="更新和升级"></a>更新和升级</h3><p><code>yum update</code> #全部更新<br><code>yum update package1</code> #更新指定程序包package1<br><code>yum check-update</code> #检查可更新的程序<br><code>yum upgrade package1</code> #升级指定程序包package1<br><code>yum groupupdate group1</code> #升级程序组group1</p><h3 id="查找和显示"><a href="#查找和显示" class="headerlink" title="查找和显示"></a>查找和显示</h3><p><code>yum info package1</code> #显示安装包信息<br><code>package1 yum list</code> #显示所有已经安装和可以安装的程序包<br><code>yum list package1</code> #显示指定程序包安装情况<br><code>package1 yum groupinfo group1</code> #显示程序组group1信息<br><code>yum search string</code> 根据关键字string查找安装包</p><h3 id="删除程序"><a href="#删除程序" class="headerlink" title="删除程序"></a>删除程序</h3><p><code>yum remove | erase package1</code> #删除程序包package1<br><code>yum groupremove group1</code> #删除程序组group1<br><code>yum deplist package1</code> #查看程序package1依赖情况</p><h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><p><code>yum clean packages</code> #清除缓存目录下的软件包<br><code>yum clean headers</code> #清除缓存目录下的 headers<br><code>yum clean oldheaders</code> #清除缓存目录下旧的 headers</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;yum，是Yellow dog Updater Modified 的简称，是杜克大学为了提高RPM 软件包安装性而开发的一种软件包管理器。起初是由yellow dog 这一发行版的开发者Terra Soft 研发，用python 写成，那时还叫做yup(yellow dog updater)，后经杜克大学的Linux@Duke 开发团队进行改进，遂有此名。yum 的宗旨是自动化地升级，安装/移除rpm 包，收集rpm 包的相关信息，检查依赖性并自动提示用户解决。yum 的关键之处是要有可靠的repository，顾名思义，这是软件的仓库，它可以是http 或ftp 站点，也可以是本地软件池，但必须包含rpm 的header，header 包括了rpm 包的各种信息，包括描述，功能，提供的文件，依赖性等。正是收集了这些header 并加以分析，才能自动化地完成余下的任务。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://iphper.cn/categories/Linux/"/>
+    
+    
+      <category term="yum" scheme="https://iphper.cn/tags/yum/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LNMP下memcached常用指令收集整理笔记</title>
+    <link href="https://iphper.cn/2017/11/26/LNMP%E4%B8%8Bmemcached%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4%E6%94%B6%E9%9B%86%E6%95%B4%E7%90%86%E7%AC%94%E8%AE%B0.html"/>
+    <id>https://iphper.cn/2017/11/26/LNMP下memcached常用指令收集整理笔记.html</id>
+    <published>2017-11-26T03:16:08.000Z</published>
+    <updated>2017-12-09T00:41:40.714Z</updated>
+    
+    <content type="html"><![CDATA[<p>为了使用 memcached 方便就收集整理了一些有关 memcached 相关的常用命令和基本状态的中文说明，就当是个学习笔记了<br><a id="more"></a></p><h2 id="启动memcached服务端程序"><a href="#启动memcached服务端程序" class="headerlink" title="启动memcached服务端程序"></a>启动memcached服务端程序</h2><pre><code>memcached -d -m 10 -u root -l localhost -p 11211 -c 256 -P &#x2F;tmp&#x2F;memcached.pid</code></pre><h3 id="各个参数的详解"><a href="#各个参数的详解" class="headerlink" title="各个参数的详解"></a>各个参数的详解</h3><blockquote><p>-d选项是启动一个守护进程，<br>-m是分配给 Memcached 使用的内存数量，单位是MB,<br>-u是运行 Memcached 的用户，我这里是root，<br>-l是监听的服务器IP地址,<br>-p是设置 Memcached 监听的端口，最好是1024以上的端口，<br>-c选项是最大运行的并发连接数，默认是1024,按照你服务器的负载量来设定，<br>-P是设置保存 Memcached 的pid文件</p></blockquote><h2 id="结束-memcached"><a href="#结束-memcached" class="headerlink" title="结束 memcached"></a>结束 memcached</h2><pre><code>kill ‘cat &#x2F;tmp&#x2F;memcached.pid’</code></pre><h2 id="查看-memcached-的运行状态"><a href="#查看-memcached-的运行状态" class="headerlink" title="查看 memcached 的运行状态"></a>查看 memcached 的运行状态</h2><pre><code>echo stats | nc 192.168.1.253 11211</code></pre><h2 id="实时查看-memcached-的运行状态"><a href="#实时查看-memcached-的运行状态" class="headerlink" title="实时查看 memcached 的运行状态"></a>实时查看 memcached 的运行状态</h2><pre><code>Watch “echo stats | nc 192.168.1.253 11211”</code></pre><h2 id="快速清空"><a href="#快速清空" class="headerlink" title="快速清空"></a>快速清空</h2><pre><code>Echo “flush_all” | nc 192.168.1.253 11211</code></pre><p>需要有nc命令才能查看，没有请安装，CentOS下可以用命令：<code>yum install nc</code>来直接安装的。</p><h2 id="查看-memcached-的状态"><a href="#查看-memcached-的状态" class="headerlink" title="查看 memcached 的状态"></a>查看 memcached 的状态</h2><pre><code>telnet 192.168.1.253 11211</code></pre><p>然后输入：<br><pre><code>stats</code></pre><br>即可浏览查看 memcached 的当前状态了，当然上面的“实时查看 memcached 的运行状态”和“查看 memcached 的运行状态”实现的是同样的结果。</p><h2 id="这些状态的说明如下"><a href="#这些状态的说明如下" class="headerlink" title="这些状态的说明如下"></a>这些状态的说明如下</h2><table><thead><tr><th style="text-align:center">英文标识</th><th style="text-align:center">中文释义</th></tr></thead><tbody><tr><td style="text-align:center">pid</td><td style="text-align:center">memcache服务器的进程ID</td></tr><tr><td style="text-align:center">uptime</td><td style="text-align:center">服务器已经运行的秒数</td></tr><tr><td style="text-align:center">time</td><td style="text-align:center">服务器当前的unix时间戳</td></tr><tr><td style="text-align:center">version</td><td style="text-align:center">memcache 版本</td></tr><tr><td style="text-align:center">pointer_size</td><td style="text-align:center">当前操作系统的指针大小（32位系统一般是32bit）</td></tr><tr><td style="text-align:center">rusage_user</td><td style="text-align:center">进程的累计用户时间</td></tr><tr><td style="text-align:center">rusage_system</td><td style="text-align:center">进程的累计系统时间</td><td></td></tr><tr><td style="text-align:center">curr_items</td><td style="text-align:center">服务器当前存储的items数量</td></tr><tr><td style="text-align:center">total_items</td><td style="text-align:center">从服务器启动以后存储的items总数量</td></tr><tr><td style="text-align:center">bytes</td><td style="text-align:center">当前服务器存储items占用的字节数</td></tr><tr><td style="text-align:center">curr_connections</td><td style="text-align:center">当前打开着的连接数</td></tr><tr><td style="text-align:center">total_connections</td><td style="text-align:center">从服务器启动以后曾经打开过的连接数</td></tr><tr><td style="text-align:center">connection_structures</td><td style="text-align:center">服务器分配的连接构造数</td></tr><tr><td style="text-align:center">cmd_get</td><td style="text-align:center">get命令（获取）总请求次数</td></tr><tr><td style="text-align:center">cmd_set</td><td style="text-align:center">set 命令（保存）总请求次数</td></tr><tr><td style="text-align:center">get_hits</td><td style="text-align:center">总命中次数</td></tr><tr><td style="text-align:center">get_misses</td><td style="text-align:center">总未命中次数</td></tr><tr><td style="text-align:center">evictions</td><td style="text-align:center">为获取空闲内存而删除的items数（分配给memcache的空间用满后需要删除旧的items来得到空间分配给新的items）</td></tr><tr><td style="text-align:center">bytes_read</td><td style="text-align:center">总读取字节数（请求字节数）</td></tr><tr><td style="text-align:center">bytes_written</td><td style="text-align:center">总发送字节数（结果字节数）</td></tr><tr><td style="text-align:center">limit_maxbytes</td><td style="text-align:center">分配给memcache的内存大小（字节）</td></tr><tr><td style="text-align:center">threads</td><td style="text-align:center">当前线程数</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为了使用 memcached 方便就收集整理了一些有关 memcached 相关的常用命令和基本状态的中文说明，就当是个学习笔记了&lt;br&gt;
+    
+    </summary>
+    
+      <category term="LNMP" scheme="https://iphper.cn/categories/LNMP/"/>
+    
+    
+      <category term="LNMP" scheme="https://iphper.cn/tags/LNMP/"/>
     
   </entry>
   

@@ -43,7 +43,7 @@
     
     <title>
         
-            归档: 2018 | 
+            Linux下利用mailx结合QQ邮箱发送系统邮件提醒等 | 
         
         ShenYan&#39;s Notes
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。">
-    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记">
+    <meta name="description" itemprop="description" content="使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：">
+    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,Linux">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ShenYan&#39;s Notes">
-    <meta name="msapplication-starturl" content="https://iphper.cn/archives/2018/">
+    <meta name="msapplication-starturl" content="https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ShenYan&#39;s Notes">
@@ -234,13 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://iphper.cn/archives/2018/">
+    <meta property="og:url" content="https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2018 | ShenYan&#39;s Notes">
+    <meta property="og:title" content="Linux下利用mailx结合QQ邮箱发送系统邮件提醒等 | ShenYan&#39;s Notes">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。">
-    
+    <meta property="og:description" content="使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：">
+    <meta property="og:article:tag" content="Linux"> 
 
+    
+        <meta property="article:published_time" content="Thu Jan 04 2018 10:52:31 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jan 04 2018 11:16:43 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -248,13 +251,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://iphper.cn/archives/2018/index.html" />
+        <link rel="canonical" href="https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html",
+    "headline": "Linux下利用mailx结合QQ邮箱发送系统邮件提醒等",
+    "datePublished": "Thu Jan 04 2018 10:52:31 GMT+0800",
+    "dateModified": "Thu Jan 04 2018 11:16:43 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Shen Yan",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "路有多远，只有心知道，,最美的旅程，是不断的经历，,坚持走下去，与梦想者同行！,我是沈唁，一个成长中的PHPer！"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ShenYan&#39;s Notes",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",LinuxPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
+    "description": "使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：",
+}
+</script>
 
 
     
@@ -288,276 +321,284 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/06/11/hello-world.html">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/06/11/hello-world.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>6月 11, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/16/为什么要用Nginx.html">为什么要用Nginx?</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/16/为什么要用Nginx.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>2月 16, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Nginx/">Nginx</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html">不能掌握Linux的人为什么总被说智商低？</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Linux操作系统相比于十年前的普及程度已经有了大大提高，但是由于其桌面操作系统上的可视化窗口操作模式并不像Windows操作系统那样直观、完美，对于一些刚接触Linux的人或者初学者来说入手还是有一定的难度，所以其发展并不是那么迅速。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>1月 14, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Linux/">Linux</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html">Linux下利用mailx结合QQ邮箱发送系统邮件提醒等</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>1月 04, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Linux/">Linux</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Linux下利用mailx结合QQ邮箱发送系统邮件提醒等
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Shen Yan</strong>
+        <span>1月 04, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Linux/">Linux</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Linux下利用mailx结合QQ邮箱发送系统邮件提醒等&url=https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Linux下利用mailx结合QQ邮箱发送系统邮件提醒等&url=https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html&via=Shen Yan" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=Linux下利用mailx结合QQ邮箱发送系统邮件提醒等&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：</p>
+<a id="more"></a>
+<p><strong>安装和配置系统的mailx：</strong></p>
+<p>　　这里以服务器首选的Linux发行版CentOS为例（好像默认都已经集成了mailx的，至于说sendmail，感觉效能差，就不做参考了）。</p>
+<p>　　运行命令：</p>
+<p>​    <code>yum -y install mailx</code></p>
+<p>　　即可自动安装mialx了。</p>
+<p>　　安装完成后，编辑<code>/etc/mail.rc</code>文件配置mailx使用QQ邮箱作为发送邮件邮箱。</p>
+<p>　　在配置文件最后添加如下QQ邮箱配置即可：</p>
+<pre><code>set from=xxxxxx@qq.com
+set smtp=smtps://smtp.qq.com:465
+set smtp-auth-user=xxxxxx@qq.com
+set smtp-auth-password=你的QQ邮箱授权码
+set smtp-auth=login
+#set smtp-use-starttls 这里是不需要配置的，很多地方没说明，配置了反而会验证失败，所以我注释掉；
+set ssl-verify=ignore
+set nss-config-dir=/root/.certs
+</code></pre><p>　记得要用到<strong>QQ邮箱的授权码</strong>哦，可以提前复制填到标注的对应位置即可！</p>
+<p>　　因为阿里云ECS封禁了25端口，所以我们只能使用TLS方式（TSL也就是使用SSL加密的方式,使用465或者其他端口来发送邮件）绕过25端口需求来发送邮件，所以必须先获得邮箱的SSL证书并存放到本地，最后一行的<code>nss-config-dir</code>就是制定的存放QQ邮箱SSL证书的位置。</p>
+<p>　　然后保存上述的编辑退出。</p>
+<p>　　因为需要QQ邮箱的SSL证书，所以我们还需要手动的获取QQ邮箱的证书保存到本地指定的目录里以备调用和验证，具体命令如下：</p>
+<pre><code>mkdir -p /root/.certs/
+echo -n | openssl s_client -connect smtp.qq.com:465 | sed -ne &#39;/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p&#39; &gt; ~/.certs/qq.crt
+certutil -A -n &quot;GeoTrust SSL CA&quot; -t &quot;C,,&quot; -d ~/.certs -i ~/.certs/qq.crt
+certutil -A -n &quot;GeoTrust Global CA&quot; -t &quot;C,,&quot; -d ~/.certs -i ~/.certs/qq.crt
+certutil -L -d /root/.certs
+</code></pre><p>为了防止出现前文所说的发送邮件警告提示，还需要进入邮箱SSL证书存放目录/root/.certs里执行如下命令：</p>
+<p><code>certutil -A -n &quot;GeoTrust SSL CA - G3&quot; -t &quot;Pu,Pu,Pu&quot; -d ./ -i qq.</code></p>
+<p>返回如下提示即可：</p>
+<pre><code>Notice: Trust flag u is set automatically if the private key is present.
+</code></pre><p>　这是为了信任证书的标记操作。</p>
+<p>　　至此，已经完成了mailx结合QQ邮箱发送系统邮件的部署了，通过命令行发送测试邮件试试吧：</p>
+<p><code>mailx -s &quot;邮箱测试&quot; xxxx@qq.com &lt; message_file.txt</code></p>
+<p><strong>命令行解读：发送主题为“邮箱测试”，内容为当前目录下message_fiel.txt文件内容到<a href="mailto:xxxx@qq.com" target="_blank" rel="noopener">xxxx@qq.com</a>邮箱。</strong></p>
+<p>　　测试邮件一旦成功，收件箱会马上收到邮件，如果没有收到，则等一会可以看到shell界面的错误提示；反正照着上述设置后是成功收到邮件了，祝大家一次配置成功！ヾ(๑╹◡╹)ﾉ”</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '页面 ID', // 可选。默认为 location.href
+        owner: 'sy-records',
+        repo: 'sy-records.github.io',
+        oauth: {
+            client_id: '8db4a983fb7b8530ed41',
+            client_secret: '31f4dee26075be5925bddb277ff90cffeef59a28',
+        },
+    })
+    gitment.render('container')
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/12/17/解决PhpStorm运行卡顿问题.html" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

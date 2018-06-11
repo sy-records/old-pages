@@ -43,7 +43,7 @@
     
     <title>
         
-            归档: 2018 | 
+            CentOS文件操作与压缩命令大全 | 
         
         ShenYan&#39;s Notes
     </title>
@@ -53,8 +53,8 @@
     <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="description" itemprop="description" content="沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。">
-    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记">
+    <meta name="description" itemprop="description" content="管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令：">
+    <meta name="keywords" content="PHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记,CentOS">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -215,7 +215,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="ShenYan&#39;s Notes">
-    <meta name="msapplication-starturl" content="https://iphper.cn/archives/2018/">
+    <meta name="msapplication-starturl" content="https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="ShenYan&#39;s Notes">
@@ -234,13 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://iphper.cn/archives/2018/">
+    <meta property="og:url" content="https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2018 | ShenYan&#39;s Notes">
+    <meta property="og:title" content="CentOS文件操作与压缩命令大全 | ShenYan&#39;s Notes">
     <meta property="og:image" content="/img/favicon.png">
-    <meta property="og:description" content="沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。">
-    
+    <meta property="og:description" content="管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令：">
+    <meta property="og:article:tag" content="CentOS"> 
 
+    
+        <meta property="article:published_time" content="Tue Dec 12 2017 12:39:57 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jun 11 2018 19:51:43 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -248,13 +251,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://iphper.cn/archives/2018/index.html" />
+        <link rel="canonical" href="https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html",
+    "headline": "CentOS文件操作与压缩命令大全",
+    "datePublished": "Tue Dec 12 2017 12:39:57 GMT+0800",
+    "dateModified": "Mon Jun 11 2018 19:51:43 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Shen Yan",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "路有多远，只有心知道，,最美的旅程，是不断的经历，,坚持走下去，与梦想者同行！,我是沈唁，一个成长中的PHPer！"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ShenYan&#39;s Notes",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",CentOSPHP,PHP博客,PHP技术博客,沈唁志,沈唁学习笔记",
+    "description": "管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令：",
+}
+</script>
 
 
     
@@ -288,276 +321,263 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件操作："><span class="post-toc-number">1.</span> <span class="post-toc-text">文件操作：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#压缩与解压缩："><span class="post-toc-number">2.</span> <span class="post-toc-text">压缩与解压缩：</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/06/11/hello-world.html">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/06/11/hello-world.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>6月 11, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/02/16/为什么要用Nginx.html">为什么要用Nginx?</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/02/16/为什么要用Nginx.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>2月 16, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Nginx/">Nginx</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html">不能掌握Linux的人为什么总被说智商低？</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Linux操作系统相比于十年前的普及程度已经有了大大提高，但是由于其桌面操作系统上的可视化窗口操作模式并不像Windows操作系统那样直观、完美，对于一些刚接触Linux的人或者初学者来说入手还是有一定的难度，所以其发展并不是那么迅速。
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/14/不能掌握Linux的人为什么总被说智商低？.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>1月 14, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Linux/">Linux</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html">Linux下利用mailx结合QQ邮箱发送系统邮件提醒等</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            使用阿里云ECS的站长们应该都知道阿里云ECS为了防止其服务器被当做垃圾邮件发送服务器禁止了邮件端口25的使用，这就造成系统级的提醒邮件无法发送，类似Fail2ban、DDoS Deflate的重要暴力破解、DDOS攻击提醒邮件有时候还是很重要的，错过了会给我们的服务器运维工作带来被动的.下面就将所有的步骤一一列出来分享给大家，也算是自己折腾的一次学习记录了：
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/01/04/Linux下利用mailx结合QQ邮箱发送系统邮件提醒等.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.jpg" width="44px" height="44px" alt="Shen Yan's avatar">
-            </div>
-            <div>
-                <strong>Shen Yan</strong>
-                <span>1月 04, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/Linux/">Linux</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                CentOS文件操作与压缩命令大全
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Shen Yan</strong>
+        <span>12月 12, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/CentOS/">CentOS</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=CentOS文件操作与压缩命令大全&url=https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html&pic=https://iphper.cn/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=CentOS文件操作与压缩命令大全&url=https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html&via=Shen Yan" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=ShenYan&#39;s Notes&title=CentOS文件操作与压缩命令大全&summary=沈唁博客(qq52o.me)是关注PHP开发等技术的个人博客，同时是个人程序人生的点滴记录和时光储备。这里是沈唁的学习笔记记录。&pics=https://iphper.cn/img/favicon.png&url=https://iphper.cn/2017/12/12/CentOS文件操作与压缩命令大全.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>管理centos服务器的时候常会对文件进行一些常规操作，除了ftp之外了解在ssh下必要的文件操作命令那也是必不可少的，以下摘录一些常用的文件操作命令：<br><a id="more"></a></p>
+<h2 id="文件操作："><a href="#文件操作：" class="headerlink" title="文件操作："></a>文件操作：</h2><p><code>ls</code> ####查看目录中的文件####<br><code>ls -F</code> ####查看目录中的文件####<br><code>ls -l</code> ####显示文件和目录的详细资料####<br><code>ls -a</code> ####显示隐藏文件####<br><code>ls *[0-9]*</code> ####显示包含数字的文件名和目录名####<br><code>rm go.tar</code> #### 删除go.tar文件####<br><code>find mt.cgi</code> ####查找文件名为mt.cgi的文件####<br><code>df ?h</code> ####查看磁盘剩余空间####<br><code>find / -name xxx -print</code> ####查找xxx文件####</p>
+<h2 id="压缩与解压缩："><a href="#压缩与解压缩：" class="headerlink" title="压缩与解压缩："></a>压缩与解压缩：</h2><p><code>tar xvf wordpress.tar</code> ####解压tar格式的文件####<br><code>tar -tvf myfile.tar</code> ####查看tar文件中包含的文件 ####<br><code>tar cf toole.tar tool</code> ####把tool目录打包为toole.tar文件####<br><code>tar cfz xwyme.tar.gz tool</code> ####把tool目录打包且压缩为xwyme.tar.gz文件，因为.tar文件几乎是没有压缩过的，MT的.tar.gz文件解压成.tar文件后差不多是10MB ####<br><code>tar jcvf /var/bak/www.tar.bz2 /var/www/</code> ####创建.tar.bz2文件，压缩率高####<br><code>tar xjf www.tar.bz2</code> ####解压tar.bz2格式####<br><code>gzip -d ge.tar.gz</code> ####解压.tar.gz文件为.tar文件####<br><code>unzip phpbb.zip</code>####解压zip文件，windows下要压缩出一个.tar.gz格式的文件还是有点麻烦的####</p>
+<p><code>bunzip2 file1.bz2</code> ####解压一个叫做 ‘file1.bz2′的文件####<br><code>bzip2 file1</code> ####压缩一个叫做 ‘file1′ 的文件####<br><code>gunzip file1.gz</code> ####解压一个叫做 ‘file1.gz’的文件####<br><code>gzip file1</code> ####压缩一个叫做 ‘file1′的文件####<br><code>gzip -9 file1</code> ####最大程度压缩####<br><code>rar a file1.rar test_file</code> ####创建一个叫做 ‘file1.rar’ 的包####<br><code>rar a file1.rar file1 file2 dir1</code> ####同时压缩 ‘file1′, ‘file2′ 以及目录 ‘dir1′####<br><code>rar x file1.rar</code> ####解压rar包####<br><code>unrar x file1.rar</code> ####解压rar包####<br><code>tar -cvf archive.tar file1</code> ####创建一个非压缩的 tarball####<br><code>tar -cvf archive.tar file1 file2 dir1</code> ####创建一个包含了 ‘file1′, ‘file2′ 以及 ‘dir1′的档案文件####<br><code>tar -tf archive.tar</code> ####显示一个包中的内容####<br><code>tar -xvf archive.tar</code> ####释放一个包####<br><code>tar -xvf archive.tar -C /tmp</code> ####将压缩包释放到 /tmp目录下####<br><code>tar -cvfj archive.tar.bz2 dir1</code> ####创建一个bzip2格式的压缩包####<br><code>tar -xvfj archive.tar.bz2</code> ####解压一个bzip2格式的压缩包####<br><code>tar -cvfz archive.tar.gz dir1</code> ####创建一个gzip格式的压缩包####<br><code>tar -xvfz archive.tar.gz</code> ####解压一个gzip格式的压缩包####<br><code>zip file1.zip file1</code> ####创建一个zip格式的压缩包####<br><code>zip -r file1.zip file1 file2 dir1</code> ####将几个文件和目录同时压缩成一个zip格式的压缩包####<br><code>unzip file1.zip</code> ####解压一个zip格式压缩包####</p>
+<p>感觉文件和压缩命令在备份网站的时候很有用的，用习惯了 Windows 下的图形界面压缩软件，突然在命令行下真的是很不习惯的，特别是备份解压缩的时候总是解压缩到错误的目录里，所以呀，掌握这些指令真的很重要。</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: '页面 ID', // 可选。默认为 location.href
+        owner: 'sy-records',
+        repo: 'sy-records.github.io',
+        oauth: {
+            client_id: '8db4a983fb7b8530ed41',
+            client_secret: '31f4dee26075be5925bddb277ff90cffeef59a28',
+        },
+    })
+    gitment.render('container')
+</script>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2017/12/17/解决PhpStorm运行卡顿问题.html" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2017/12/10/CentOS与Ubuntu有什么不同？.html" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
