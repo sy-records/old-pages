@@ -29,6 +29,8 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
 
 
 
@@ -546,30 +548,27 @@ certutil -L -d /root/.certs
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用 gitcoment -->
-<div id="gitment-comment">
-    <!-- Gitment 评论框 -->
-<div id="container"></div>
-</div>
-<style>
-    #gitment-comment{
-        background-color: #eee;
-        padding: 2pc;
-    }
-</style>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <div id="comment" style='padding:10px;' class="vcomment"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 <script>
-    var gitment = new Gitment({
-        id: '页面 ID', // 可选。默认为 location.href
-        owner: 'sy-records',
-        repo: 'sy-records.github.io',
-        oauth: {
-            client_id: '8db4a983fb7b8530ed41',
-            client_secret: '31f4dee26075be5925bddb277ff90cffeef59a28',
-        },
-    })
-    gitment.render('container')
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "vAMT3L9N3Q2xXf5f3GxJ87sq-gzGzoHsz",
+        appKey: "qg7ljyjs8HIOWmPip6GzDa9t",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn'
+    });
 </script>
 
                 
@@ -945,7 +944,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-   <!-- Gitment -->
+   
 
 
 
