@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://iphper.cn/"/>
-  <updated>2018-06-11T01:55:23.732Z</updated>
+  <updated>2018-06-17T08:39:44.814Z</updated>
   <id>https://iphper.cn/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue学习笔记系列之一</title>
+    <link href="https://iphper.cn/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B8%80.html"/>
+    <id>https://iphper.cn/Vue学习笔记一.html</id>
+    <published>2018-06-17T08:32:56.000Z</published>
+    <updated>2018-06-17T08:39:44.814Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是Vue-js"><a href="#什么是Vue-js" class="headerlink" title="什么是Vue.js"></a>什么是Vue.js</h2><a id="more"></a><ul><li><p>Vue.js 是目前最火的一个前端框架，React是最流行的一个前端框架（React除了开发网站，还可以开发手机App， Vue语法也是可以用于进行手机App开发的，需要借助于Weex）</p></li><li><p>Vue.js 是前端的<strong>主流框架之一</strong>，和Angular.js、React.js 一起，并成为前端三大主流框架！</p></li><li><p>Vue.js 是一套构建用户界面的框架，<strong>只关注视图层</strong>，它不仅易于上手，还便于与第三方库或既有项目整合。（Vue有配套的第三方类库，可以整合起来做大型项目的开发）</p></li></ul><h2 id="为什么要学习流行框架"><a href="#为什么要学习流行框架" class="headerlink" title="为什么要学习流行框架"></a>为什么要学习流行框架</h2><ul><li>为了提高开发效率</li><li>提高开发效率的发展历程：原生JS -&gt; Jquery之类的类库 -&gt; 前端模板引擎 -&gt; Angular.js / Vue.js（能够帮助我们减少不必要的DOM操作；提高渲染效率；双向数据绑定的概念【通过框架提供的指令，前端程序员只需要关心数据的业务逻辑，不再关心DOM是如何渲染的了】）</li><li>在Vue中，一个核心的概念，就是让用户不再操作DOM元素，解放了用户的双手，让程序员可以更多的时间去关注业务逻辑</li></ul><h2 id="框架和库的区别"><a href="#框架和库的区别" class="headerlink" title="框架和库的区别"></a>框架和库的区别</h2><ul><li>框架：是一套完整的解决方案；对项目的侵入性较大，项目如果需要更换框架，则需要重新架构整个项目。</li></ul><ul><li>node 中的 express；</li></ul><ul><li>库（插件）：提供某一个小功能，对项目的侵入性较小，如果某个库无法完成某些需求，可以很容易切换到其它库实现需求。</li></ul><ul><li><ol><li>从Jquery 切换到 Zepto</li></ol></li><li><ol start="2"><li>从 EJS 切换到 art-template</li></ol></li></ul><h2 id="后端中的-MVC-与-前端中的-MVVM-之间的区别"><a href="#后端中的-MVC-与-前端中的-MVVM-之间的区别" class="headerlink" title="后端中的 MVC 与 前端中的 MVVM 之间的区别"></a>后端中的 MVC 与 前端中的 MVVM 之间的区别</h2><ul><li><p>MVC 是后端的分层开发概念</p></li><li><p>MVVM是前端视图层的概念，主要关注于 视图层分离，也就是说：MVVM把前端的视图层，分为了 三部分 Model, View , VM ViewModel</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是Vue-js&quot;&gt;&lt;a href=&quot;#什么是Vue-js&quot; class=&quot;headerlink&quot; title=&quot;什么是Vue.js&quot;&gt;&lt;/a&gt;什么是Vue.js&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="https://iphper.cn/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
